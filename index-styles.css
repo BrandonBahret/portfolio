@@ -1,0 +1,15 @@
+@import url(header-styles.css);
+
+:root {
+    --bg-grad: linear-gradient(180deg, #25315D 0%, #253B5D 100%);
+
+    --soft-white: #F6F6F9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
