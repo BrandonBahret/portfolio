@@ -1,4 +1,5 @@
 @import url(header-styles.css);
+@import url(wordmark-styles.css);
 
 :root {
     --bg-grad: linear-gradient(180deg, #25315D 0%, #253B5D 100%);
@@ -8,6 +9,8 @@
 
 * {
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: var(--soft-white);
 }
 
 body {

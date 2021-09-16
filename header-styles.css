@@ -1,23 +1,30 @@
 
-body>header {
-    display: grid;
-    grid-template: "logo header-nav"
-                    "logo header-content";
-
+header {
     background: var(--bg-grad);
-}
 
-body>header * {
-    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header * {
     color: var(--soft-white);
 }
 
-body>header>.logo {
-    grid-area: logo;
-    width: 1fr;
+.header-inner {
+    display: grid;
+    width: 80vw;
+    grid-template: "wordmark header-nav"
+                    ". header-content";
+    grid-template-columns: min-content 1fr;
+
+    padding: 2.0em 0 4.0em 0;
+    /* margin: 0 auto; */
+
+    column-gap: 1.5em;
+    row-gap: 2.5em;
 }
 
-body>header>nav ul {
+.header-inner>nav ul {
     grid-area: header-nav;
     width: 1fr;
 
@@ -31,17 +38,19 @@ body>header>nav ul {
     column-gap: 1em;
 }
 
-body>header>article {
+.header-content {
     grid-area: header-content;
-    width: 1fr;
+    max-width: 50em;
 }
 
-h1 {
+.header-content h1 {
     font-size: 1.5em;
     font-weight: bold;
+    margin: 0 0 0.50em 0;
 }
 
-h2 {
+.header-content h2 {
     font-size: 1.15em;
     font-weight: normal;
+    margin: 0;
 }

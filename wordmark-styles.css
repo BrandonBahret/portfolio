@@ -1,0 +1,31 @@
+
+.wordmark {
+    display: grid;
+    grid-area: wordmark;
+    width: min-content;
+    
+    column-gap: 0.5rem;
+    grid-template-areas: "wordmark-logo wordmark-text"
+                         ". wordmark-anchor";
+}
+
+.wordmark #wordmark-logo {
+    grid-area: wordmark-logo;
+    width: 4em;
+}
+.wordmark #wordmark-text {
+    grid-area: wordmark-text;
+
+    line-height: 135%;
+    letter-spacing: 0.05em;
+
+    font-size: 1.50em;
+    margin: auto;
+}
+.wordmark #wordmark-anchor {
+    grid-area: wordmark-anchor;
+    
+    width: 1.75em;
+    display: flex;
+    justify-self: right;
+}
