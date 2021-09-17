@@ -11,21 +11,21 @@
 
 .wordmark #wordmark-logo {
     grid-area: wordmark-logo;
-    width: 4em;
+    width: 3.5em;
 }
 .wordmark #wordmark-text {
     grid-area: wordmark-text;
 
-    line-height: 135%;
+    line-height: 125%;
     letter-spacing: 0.05em;
 
-    font-size: 1.50em;
+    font-size: 1.25em;
     margin: auto;
 }
 .wordmark #wordmark-anchor {
     grid-area: wordmark-anchor;
     
-    width: 1.75em;
+    width: 1.55em;
     display: flex;
     justify-self: right;
 }

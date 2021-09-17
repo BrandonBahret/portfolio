@@ -1,10 +1,19 @@
 @import url(header-styles.css);
 @import url(wordmark-styles.css);
+@import url(availability-styles.css);
 
 :root {
     --bg-grad: linear-gradient(180deg, #25315D 0%, #253B5D 100%);
+    --bg-card: #F9F9FB;
+    --bg-body: #FCFCFD;
 
     --soft-white: #F6F6F9;
+    --light-grey: #D7D7DB;
+    --soft-grey: #DDE8EE;
+
+    --dark-blue: hsla(227, 43%, 25%, 1);
+
+    --accent-1: #406BBF;
 }
 
 * {
@@ -15,4 +24,14 @@
 
 body {
     margin: 0;
+    background: var(--bg-body);
+}
+
+
+.btn-grey {
+    background-color: var(--soft-grey);
+    color: var(--dark-blue);
+    padding: 0.25em 0.75em;
+    border-radius: 3px;
+    text-decoration: none;
 }

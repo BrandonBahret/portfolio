@@ -12,43 +12,65 @@ header * {
 
 .header-inner {
     display: grid;
-    width: 80vw;
+    width: 90vw;
+
     grid-template: "wordmark header-nav"
                     ". header-content";
     grid-template-columns: min-content 1fr;
 
-    padding: 2.0em 0 4.0em 0;
-    /* margin: 0 auto; */
+    padding: 2.0em 0 8.0em 0;
 
     column-gap: 1.5em;
     row-gap: 2.5em;
 }
 
-.header-inner>nav ul {
+.header-inner>nav {
     grid-area: header-nav;
-    width: 1fr;
-
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    width: min-content;
+    height: min-content;
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    column-gap: 1em;
+    justify-self: end;
+    align-items: center;
+    column-gap: 1.5em;
+
+    font-size: 1.125em;
+    letter-spacing: 0.05em;
 }
+.header-inner>nav a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--light-grey);
+}
+.header-inner>nav a:hover, a:active {
+    color: var(--soft-white);
+}
+.header-inner>nav a:last-child {
+    background-color: var(--bg-card);
+    color: var(--accent-1);
+    padding: 0.25em 0.5em;
+    border-radius: 3px;
+}
+.header-inner>nav a:last-child:hover {
+    box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
+}
+
 
 .header-content {
     grid-area: header-content;
-    max-width: 50em;
+
+    display: flex;
+    width: 40em;
+    max-width: 70%;
 }
+/* @media(max-width: ) */
 
 .header-content h1 {
     font-size: 1.5em;
     font-weight: bold;
     margin: 0 0 0.50em 0;
 }
-
 .header-content h2 {
     font-size: 1.15em;
     font-weight: normal;
