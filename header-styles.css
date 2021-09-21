@@ -14,11 +14,11 @@ header * {
     display: grid;
     width: 90vw;
 
-    grid-template: "wordmark header-nav"
-                    ". header-content";
+    grid-template: "wordmark header-nav header-nav"
+                    ". header-content header-avail";
     grid-template-columns: min-content 1fr;
 
-    padding: 2.0em 0 8.0em 0;
+    padding: 2.0em 0 0 0;
 
     column-gap: 1.5em;
     row-gap: 2.5em;
@@ -43,6 +43,9 @@ header * {
     text-decoration: none;
     color: var(--light-grey);
 }
+.header-inner>nav :first-child {
+    color: var(--soft-white);
+}
 .header-inner>nav a:hover, a:active {
     color: var(--soft-white);
 }
@@ -61,18 +64,19 @@ header * {
     grid-area: header-content;
 
     display: flex;
-    width: 40em;
-    max-width: 70%;
+    width: 60em;
+    max-width: 60%;
+    height: min-content;
 }
-/* @media(max-width: ) */
+
 
 .header-content h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
     margin: 0 0 0.50em 0;
 }
 .header-content h2 {
-    font-size: 1.15em;
+    font-size: 1.40em;
     font-weight: normal;
     margin: 0;
 }

@@ -20,13 +20,13 @@
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
     color: var(--soft-white);
+    font-style: normal;
 }
 
 body {
     margin: 0;
     background: var(--bg-body);
 }
-
 
 .btn-grey {
     background-color: var(--soft-grey);

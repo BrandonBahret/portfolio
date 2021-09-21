@@ -1,7 +1,14 @@
 
 .avail {
+    grid-area: header-avail;
+
     width: 18em;
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+
+
+    position: relative;
+    right: 3em;
+    top: 4em;
 }
 .avail-inner * {
     margin: 0;
