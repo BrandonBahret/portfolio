@@ -23,6 +23,10 @@
     font-style: normal;
 }
 
+address {
+    display: inline;
+}
+
 body {
     margin: 0;
     background: var(--bg-body);

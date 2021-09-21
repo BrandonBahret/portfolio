@@ -3,6 +3,7 @@
     display: grid;
     grid-area: wordmark;
     width: min-content;
+    margin: 0 2em 1em 0;
     
     column-gap: 0.5rem;
     grid-template-areas: "wordmark-logo wordmark-text"

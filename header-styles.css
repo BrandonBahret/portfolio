@@ -11,23 +11,40 @@ header * {
 }
 
 .header-inner {
-    display: grid;
     width: 90vw;
-
-    grid-template: "wordmark header-nav header-nav"
-                    ". header-content header-avail";
-    grid-template-columns: min-content 1fr;
-
+    
+    /* grid-template: "wordmark header-nav header-nav"
+    ". header-content header-avail";
+    grid-template-columns: min-content 1fr; */
+    
     padding: 2.0em 0 0 0;
-
-    column-gap: 1.5em;
-    row-gap: 2.5em;
+    /* row-gap: 2.5em; */
+    /* column-gap: 1.5em; */
 }
 
-.header-inner>nav {
+.nav-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 3em;
+}
+
+.head-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 5%;
+}
+
+.header-inner nav {
     grid-area: header-nav;
     width: min-content;
     height: min-content;
+
+    margin: 0.5em;
 
     display: flex;
     flex-direction: row;
@@ -38,24 +55,24 @@ header * {
     font-size: 1.125em;
     letter-spacing: 0.05em;
 }
-.header-inner>nav a {
+.header-inner nav a {
     text-transform: capitalize;
     text-decoration: none;
     color: var(--light-grey);
 }
-.header-inner>nav :first-child {
+.header-inner nav :first-child {
     color: var(--soft-white);
 }
-.header-inner>nav a:hover, a:active {
+.header-inner nav a:hover, a:active {
     color: var(--soft-white);
 }
-.header-inner>nav a:last-child {
+.header-inner nav a:last-child {
     background-color: var(--bg-card);
     color: var(--accent-1);
     padding: 0.25em 0.5em;
     border-radius: 3px;
 }
-.header-inner>nav a:last-child:hover {
+.header-inner nav a:last-child:hover {
     box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
 }
 
@@ -65,11 +82,9 @@ header * {
 
     display: flex;
     width: 60em;
-    max-width: 60%;
+    max-width: 50vw;
     height: min-content;
 }
-
-
 .header-content h1 {
     font-size: 2em;
     font-weight: bold;
@@ -79,4 +94,28 @@ header * {
     font-size: 1.40em;
     font-weight: normal;
     margin: 0;
+}
+
+@media(max-width: 855px){
+    .avail {
+        display: none;
+    }
+
+    header {
+        padding-bottom: 2.5em;
+    }
+
+    .nav-row {
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+
+    .head-content-row {
+        margin: 0;
+    }
+    .header-content {
+        width: 60em;
+        max-width: 100vw;
+    }
+
 }
