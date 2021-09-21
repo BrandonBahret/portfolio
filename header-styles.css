@@ -11,13 +11,14 @@ header * {
 }
 
 .header-inner {
-    width: 90vw;
+    width: 85vw;
     
     /* grid-template: "wordmark header-nav header-nav"
     ". header-content header-avail";
     grid-template-columns: min-content 1fr; */
     
     padding: 2.0em 0 0 0;
+    
     /* row-gap: 2.5em; */
     /* column-gap: 1.5em; */
 }
@@ -29,14 +30,6 @@ header * {
     justify-content: space-between;
 
     margin-bottom: 3em;
-}
-
-.head-content-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    margin-left: 5%;
 }
 
 .header-inner nav {
@@ -77,12 +70,20 @@ header * {
 }
 
 
+.head-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 2em;
+    width: 85vw;
+}
 .header-content {
     grid-area: header-content;
 
     display: flex;
     width: 60em;
-    max-width: 50vw;
+    max-width: 45vw;
     height: min-content;
 }
 .header-content h1 {
