@@ -1,0 +1,45 @@
+.navigation {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 3em;
+}
+
+nav {
+    display: flex;
+
+    flex-direction: row;
+    justify-self: end;
+    align-items: center;
+
+    width: min-content;
+    height: min-content;
+    margin: 0.5em;
+    column-gap: 1.5em;
+
+    font-size: 1.125em;
+    letter-spacing: 0.05em;
+}
+nav a {
+    color: var(--light-grey);
+
+    text-transform: capitalize;
+    text-decoration: none;
+}
+nav :first-child, a:hover, a:active {
+    color: var(--soft-white);
+}
+
+.contact-btn {
+    border-radius: 3px;
+    padding: 0.25em 0.5em;
+
+    background-color: var(--bg-card);
+    color: var(--accent-1);
+}
+.contact-btn:hover {
+    box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
+}

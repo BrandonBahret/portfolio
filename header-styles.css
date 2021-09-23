@@ -1,122 +1,104 @@
+@import url(navigation-styles.css);
 
 header {
-    background: var(--bg-grad);
-
     display: flex;
+
     flex-direction: column;
     align-items: center;
+
+    background: var(--bg-grad);
 }
 header * {
     color: var(--soft-white);
 }
 
 .header-inner {
+    display: flex;
+    flex-direction: column;
     width: 85vw;
-    
-    /* grid-template: "wordmark header-nav header-nav"
-    ". header-content header-avail";
-    grid-template-columns: min-content 1fr; */
-    
     padding: 2.0em 0 0 0;
-    
-    /* row-gap: 2.5em; */
-    /* column-gap: 1.5em; */
 }
 
-.nav-row {
+.header-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-    margin-bottom: 3em;
-}
-
-.header-inner nav {
-    grid-area: header-nav;
-    width: min-content;
-    height: min-content;
-
-    margin: 0.5em;
-
-    display: flex;
-    flex-direction: row;
-    justify-self: end;
-    align-items: center;
-    column-gap: 1.5em;
-
-    font-size: 1.125em;
-    letter-spacing: 0.05em;
-}
-.header-inner nav a {
-    text-transform: capitalize;
-    text-decoration: none;
-    color: var(--light-grey);
-}
-.header-inner nav :first-child {
-    color: var(--soft-white);
-}
-.header-inner nav a:hover, a:active {
-    color: var(--soft-white);
-}
-.header-inner nav a:last-child {
-    background-color: var(--bg-card);
-    color: var(--accent-1);
-    padding: 0.25em 0.5em;
-    border-radius: 3px;
-}
-.header-inner nav a:last-child:hover {
-    box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
-}
-
-
-.head-content-row {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    margin-left: 2em;
     width: 85vw;
 }
-.header-content {
-    grid-area: header-content;
-
+.header-introduction {
     display: flex;
-    width: 60em;
-    max-width: 45vw;
+
+    flex-direction: column;
+    
     height: min-content;
+    width: 60em;
+    min-width: 35em;
+    max-width: 45vw;
+    
+    margin-left: 4em;
 }
-.header-content h1 {
+.header-introduction h1 {
+    margin: 0 0 0.50em 0;
+
     font-size: 2em;
     font-weight: bold;
-    margin: 0 0 0.50em 0;
 }
-.header-content h2 {
+.header-introduction h2 {
+    margin: 0;
+
     font-size: 1.40em;
     font-weight: normal;
-    margin: 0;
 }
 
-@media(max-width: 855px){
-    .avail {
-        display: none;
+@media(max-width: 1100px){
+    :root {
+        font-size: 14px;
+    }
+}
+@media(max-width: 1000px){
+    :root {
+        font-size: 13px;
+    }
+}
+@media(max-width: 890px){
+    :root {
+        font-size: 14px;
     }
 
-    header {
-        padding-bottom: 2.5em;
-    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
 
-    .nav-row {
-        justify-content: center;
         margin-bottom: 2em;
     }
+    
+    header {
+        align-items: center;
 
-    .head-content-row {
-        margin: 0;
+        padding-bottom: 2.5em;
+    }
+    .header-inner {
+        align-items: center;
+
+        width: initial;
     }
     .header-content {
-        width: 60em;
-        max-width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2em;
     }
 
+    .header-introduction {
+        min-width: initial;
+        max-width: initial;
+        width: initial;
+        margin: 0;
+    }
+    .header-badge-wrap {
+        position: initial;
+
+        width: 100%;
+    }
 }

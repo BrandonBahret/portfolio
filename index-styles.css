@@ -1,6 +1,6 @@
-@import url(header-styles.css);
 @import url(wordmark-styles.css);
 @import url(availability-styles.css);
+@import url(header-styles.css);
 
 :root {
     --bg-grad: linear-gradient(180deg, #25315D 0%, #253B5D 100%);
@@ -18,8 +18,10 @@
 
 * {
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    
     color: var(--soft-white);
+
+    font-family: Roboto, sans-serif;
     font-style: normal;
 }
 
@@ -33,9 +35,11 @@ body {
 }
 
 .btn-grey {
-    background-color: var(--soft-grey);
-    color: var(--dark-blue);
     padding: 0.25em 0.75em;
     border-radius: 3px;
+
+    background-color: var(--soft-grey);
+    color: var(--dark-blue);
+    
     text-decoration: none;
 }

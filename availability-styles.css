@@ -1,52 +1,53 @@
 
-.avail {
-    grid-area: header-avail;
+.header-badge-wrap {
+    position: relative;
+    right: 0;
+    top: 4em;
 
     width: 18em;
     height: min-content;
 
     box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    right: 0;
-    top: 4em;
 }
-.avail-inner * {
+.header-badge * {
     margin: 0;
-    color: var(--dark-blue);
+    
     background: var(--bg-card);
+    color: var(--dark-blue);
+    
     font-weight: normal;
     font-style: normal;
     text-align: center;
     letter-spacing: 0.01em;
-
 }
-.avail-inner {
+.header-badge {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     padding: 1.75em 2em 1.25em 2em;
 
     background: var(--bg-card);
     border-radius: 3px 3px 0 0;
 }
 .border-accent {
-    background: linear-gradient(180deg, #4082BF 3.65%, #406BBF 67.19%);
-    height: 0.5em;
     width: inherit;
+    height: 0.5em;
     border-radius: 0 0 3px 3px;
+
+    background: linear-gradient(180deg, #4082BF 3.65%, #406BBF 67.19%);
 }
 
-.avail-inner em {
+.header-badge em {
     color: var(--accent-1);
 }
-.avail-inner>h1 {
+.header-badge>h1 {
     margin-bottom: 2em;
 }
-.avail-inner>h2 {
+.header-badge>h2 {
     margin-bottom: 1em;
 }
-.avail-inner>a {
+.header-badge>a {
     font-size: 1.25em;
     text-transform: capitalize;
 }
