@@ -43,3 +43,28 @@ nav :first-child, a:hover, a:active {
 .contact-btn:hover {
     box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
 }
+
+@media(max-width: 890px){
+    .navigation {
+        flex-direction: column;
+
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    nav {
+        align-self: center;
+    }
+}
+@media(max-width: 470px){
+    .navigation {
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    nav {
+        align-self: start;
+        content: url(/images/hamburger-icon.svg);
+    }
+}

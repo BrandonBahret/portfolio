@@ -1,4 +1,4 @@
-@import url(navigation-styles.css);
+@import url(/styles/header/navigation-styles.css);
 
 header {
     display: flex;
@@ -14,7 +14,9 @@ header * {
 
 .header-inner {
     display: flex;
+
     flex-direction: column;
+    
     width: 85vw;
     padding: 2.0em 0 0 0;
 }
@@ -62,18 +64,7 @@ header * {
         font-size: 13px;
     }
 }
-@media(max-width: 890px){
-    :root {
-        font-size: 14px;
-    }
-
-    .navigation {
-        flex-direction: column;
-        align-items: center;
-
-        margin-bottom: 2em;
-    }
-    
+@media(max-width: 890px){    
     header {
         align-items: center;
 
@@ -82,7 +73,7 @@ header * {
     .header-inner {
         align-items: center;
 
-        width: initial;
+        width: 90%;
     }
     .header-content {
         flex-direction: column;
