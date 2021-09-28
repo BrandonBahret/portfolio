@@ -44,6 +44,16 @@ nav :first-child, a:hover, a:active {
     box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
 }
 
+nav {
+    display: none;
+}
+.nav-toggle {
+    display: block;
+}
+.nav-close {
+    display: none;
+}
+
 @media(max-width: 890px){
     .navigation {
         flex-direction: column;
@@ -52,10 +62,11 @@ nav :first-child, a:hover, a:active {
         margin-bottom: 2em;
     }
     nav {
+        display: flex;
         align-self: center;
     }
 }
-@media(max-width: 470px){
+/* @media(max-width: 470px){ */
     .navigation {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -63,8 +74,58 @@ nav :first-child, a:hover, a:active {
         width: 100%;
         margin-bottom: 2em;
     }
-    nav {
-        align-self: start;
-        content: url(/images/hamburger-icon.svg);
+
+    .nav-toggle {
+        display: block;
     }
-}
+    html {
+        overflow: hidden;
+    }
+
+    nav {
+        display: none;
+        align-self: start;
+        flex-direction: column;
+        justify-content: center;
+
+        position: absolute;
+        z-index: 999;
+        top: 0;
+        right: 0;
+
+        margin: 0;
+        row-gap: 3em;
+        width: 80vw;
+        max-width: 400px;
+        height: 100vh;
+        
+        background: white;
+        box-shadow: -5em 0 3em rgba(25, 31, 52, 0.452);
+        font-size: 2em;
+    }
+
+    .nav-close {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+
+        width: 2em;
+        padding: 0.5em 0;
+        text-align: center;
+    }
+    nav a:hover {
+        color: black;
+    }
+    nav a {
+        color: var(--accent-1);
+    }
+    nav :first-child {
+        color: var(--accent-1);
+    }
+    nav :last-child {
+        background: none;
+    }
+    nav :last-child:hover {
+        box-shadow: none;
+    }
+/* } */

@@ -7,6 +7,19 @@
     <meta name="google" content="notranslate">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/index/index-styles.css">
+
+    <script>
+        // temporary side nav implementation
+        function openNav() {
+            document.getElementsByTagName("nav")[0].style.display = "flex";
+            document.getElementsByClassName("nav-close")[0].style.display = "block";
+        }
+        
+        function closeNav() {
+            document.getElementsByTagName("nav")[0].style.display = "none";
+            document.getElementsByClassName("nav-close")[0].style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -18,12 +31,15 @@
                 <img src="images/anchor-vector.svg" alt="" id="wordmark-anchor">
             </div>
     
+
+            <span style="cursor:pointer" class="nav-toggle" onclick="openNav()"><img src="/images/hamburger-icon.svg" alt=""></span>
             <nav>
-                <a href="#">home</a>
-                <a href="#">portfolio</a>
-                <a href="#">process</a>
-                <a href="#">résumé</a>
-                <a href="#" class="contact-btn">contact</a>
+                <a href="javascript:void(0)" class="nav-close" onclick="closeNav()">&times;</a>
+                <a href="#" onclick="closeNav()">home</a>
+                <a href="#" onclick="closeNav()">portfolio</a>
+                <a href="#" onclick="closeNav()">process</a>
+                <a href="#" onclick="closeNav()">résumé</a>
+                <a href="#" class="contact-btn" onclick="closeNav()">contact</a>
             </nav>
         </div>
 
@@ -46,6 +62,6 @@
         </div>
     </div>
     </header>
-    
+
 </body>
 </html>
