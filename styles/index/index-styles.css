@@ -1,6 +1,7 @@
 @import url(/styles/header/wordmark-styles.css);
 @import url(/styles/header/availability-styles.css);
 @import url(/styles/header/header-styles.css);
+@import url(/styles/components/side-heading.css);
 
 :root {
     --bg-grad: linear-gradient(180deg, #25315D 0%, #253B5D 100%);
@@ -10,16 +11,15 @@
     --soft-white: #F6F6F9;
     --light-grey: #D7D7DB;
     --soft-grey: #DDE8EE;
+    --grey: #F0F1F2;
 
-    --dark-blue: hsla(227, 43%, 25%, 1);
+    --dark-blue: #191F34;
 
     --accent-1: #406BBF;
 }
 
 * {
     box-sizing: border-box;
-    
-    color: var(--soft-white);
 
     font-family: Roboto, sans-serif;
     font-style: normal;
@@ -42,4 +42,9 @@ body {
     color: var(--dark-blue);
     
     text-decoration: none;
+}
+.btn-grey:hover {
+    color: var(--dark-blue);
+    box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
+    transform: translate(-3px, -3px);
 }

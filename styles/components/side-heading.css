@@ -1,0 +1,30 @@
+
+.services {
+    margin: 7em 4em;
+}
+
+.side-heading {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 8em;
+    max-height: 11em;
+    box-sizing: content-box;
+    
+    color: var(--dark-blue);
+    background: var(--grey);
+    padding: 0 50px;
+    margin: 3em 0;
+    transform: skew(0, 6deg);
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+.side-heading p {
+    margin: 0.5em 0;
+    transform: skew(0, -6deg);
+}
+.side-heading h2 {
+    margin: 0;
+    transform: skew(0, -6deg);
+}

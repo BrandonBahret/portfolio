@@ -41,10 +41,12 @@ nav :first-child, a:hover, a:active {
     color: var(--accent-1);
 }
 .contact-btn:hover {
+    color: var(--dark-blue);
     box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
+    transform: translate(-3px, -3px);
 }
 
-nav {
+/* nav {
     display: none;
 }
 .nav-toggle {
@@ -52,7 +54,7 @@ nav {
 }
 .nav-close {
     display: none;
-}
+} */
 
 @media(max-width: 890px){
     .navigation {
@@ -66,7 +68,7 @@ nav {
         align-self: center;
     }
 }
-/* @media(max-width: 470px){ */
+/* @media(max-width: 470px){
     .navigation {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -128,4 +130,4 @@ nav {
     nav :last-child:hover {
         box-shadow: none;
     }
-/* } */
+} */
