@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 @import url(/styles/header/wordmark-styles.css);
 @import url(/styles/header/availability-styles.css);
 @import url(/styles/header/header-styles.css);
 @import url(/styles/components/side-heading.css);
+@import url(/styles/components/badge.css);
 
 :root {
     --bg-grad: linear-gradient(180deg, #25315D 0%, #253B5D 100%);
@@ -47,4 +50,14 @@ body {
     color: var(--dark-blue);
     box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
     transform: translate(-3px, -3px);
+}
+
+.services {
+    display: flex;
+    max-width: 80em;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin: 9em 4em;
+    column-gap: 30px;
 }
