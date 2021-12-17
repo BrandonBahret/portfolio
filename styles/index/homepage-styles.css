@@ -5,6 +5,20 @@
     flex-direction: row;
     justify-content: space-between;
     
-    margin: 9em 4em;
+    margin: 9em 4em 4em 4em;
     column-gap: 30px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+
+    margin: 5em 4em;
+    column-gap: 5em;
+}
+
+.portfolio-collection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5em;
 }

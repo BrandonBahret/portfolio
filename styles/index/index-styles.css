@@ -5,6 +5,7 @@
 @import url(/styles/header/header-styles.css);
 @import url(/styles/components/side-heading.css);
 @import url(/styles/components/badge.css);
+@import url(/styles/components/portfolio-item.css);
 
 @import url(/styles/index/homepage-styles.css);
 
@@ -28,6 +29,10 @@
 
     font-family: Roboto, sans-serif;
     font-style: normal;
+}
+
+h1,h2,h3,h4,p {
+    margin: 0 0 0.5em 0;
 }
 
 address {

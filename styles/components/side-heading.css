@@ -8,10 +8,11 @@
     max-height: 11em;
     box-sizing: content-box;
     
+    padding: 0 50px;
+    margin: 0;
+
     color: var(--dark-blue);
     background: var(--grey);
-    padding: 0 50px;
-    margin: 0.75rem 0;
     transform: skew(0, 6deg);
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
 }
