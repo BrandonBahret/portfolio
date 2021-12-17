@@ -41,7 +41,7 @@ nav :first-child, a:hover, a:active {
     color: var(--accent-1);
 }
 .contact-btn:hover {
-    color: var(--dark-blue);
+    color: var(--accent-1);
     box-shadow: 5px 5px hsla(227, 35%, 15%, 1);
     transform: translate(-3px, -3px);
 }

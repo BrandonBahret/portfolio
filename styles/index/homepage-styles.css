@@ -1,0 +1,10 @@
+
+.services {
+    display: flex;
+    max-width: 80em;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin: 9em 4em;
+    column-gap: 30px;
+}
