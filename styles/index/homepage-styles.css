@@ -26,12 +26,13 @@
 .testimonials {
     display: flex;
     flex-direction: row;
-    margin: 5em 4em;
+    margin: 5em 4em 10em 4em;
     column-gap: min(10vw,10em);
 }
 
 .watermark {
     position: absolute;
+    z-index: -1;
     right: 0;
     margin-top: -3em;
 
