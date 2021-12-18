@@ -22,3 +22,10 @@
     flex-direction: column;
     row-gap: 2.5em;
 }
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    margin: 5em 4em;
+    column-gap: min(10vw,10em);
+}
