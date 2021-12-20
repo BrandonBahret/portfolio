@@ -14,11 +14,15 @@
     border-bottom: 5px solid rgba(64, 107, 191, 0.2);
 }
 
+.portolio-item p {
+    font-size: 1.20em;
+}
+
 .portolio-item>div {
     display: flex;
     flex-direction: column;
     
-    max-width: 26em;
+    max-width: 33em;
     height: inherit;
     padding: 10px;
 }
