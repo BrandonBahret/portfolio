@@ -1,5 +1,11 @@
 @import url(/styles/header/navigation-styles.css);
 
+/* @media(max-width: 890px){
+    .header-badge-wrap {
+        display: none;
+    }
+} */
+
 header {
     display: flex;
 
@@ -14,8 +20,8 @@ header * {
 
 .header-inner {
     display: flex;
-
     flex-direction: column;
+    justify-content: space-around;
     
     width: 85vw;
     padding: 2.0em 0 0 0;

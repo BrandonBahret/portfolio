@@ -26,14 +26,13 @@
     display: flex;
     flex-direction: row;
     margin: 5em 4em 7em var(--section-margin-left);
-    column-gap: 2em;
+    column-gap: 4em;
 }
 
 .watermark {
     position: absolute;
     z-index: -1;
     right: 0;
-    /* margin-top: 5em; */
 
     width: 25em;
 }
