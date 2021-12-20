@@ -7,22 +7,12 @@
     <meta name="google" content="notranslate">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/index/index-styles.css">
-
-    <script>
-        // temporary side nav implementation
-        function openNav() {
-            document.getElementsByTagName("nav")[0].style.display = "flex";
-            document.getElementsByClassName("nav-close")[0].style.display = "block";
-        }
-        
-        function closeNav() {
-            document.getElementsByTagName("nav")[0].style.display = "none";
-            document.getElementsByClassName("nav-close")[0].style.display = "none";
-        }
-    </script>
 </head>
 <body>
-    <header>
+    <a href="#header" class="btn-backtotop">
+        <img src="images/up-arrow.svg" alt="back to top">
+    </a>
+    <header id="header">
     <div class="header-inner">
         <div class="navigation">
             <div class="wordmark">
@@ -31,23 +21,12 @@
                 <img src="images/anchor-vector.svg" alt="" id="wordmark-anchor">
             </div>
     
-
-            <!-- <span style="cursor:pointer" class="nav-toggle" onclick="openNav()"><img src="/images/hamburger-icon.svg" alt=""></span> -->
             <nav>
                 <a href="#">home</a>
-                <a href="#">portfolio</a>
+                <a href="#portfolio">portfolio</a>
                 <a href="#">process</a>
-                <a href="#">résumé</a>
                 <a href="#" class="contact-btn">contact</a>
             </nav>
-            <!-- <nav>
-                <a href="javascript:void(0)" class="nav-close" onclick="closeNav()">&times;</a>
-                <a href="#" onclick="closeNav()">home</a>
-                <a href="#" onclick="closeNav()">portfolio</a>
-                <a href="#" onclick="closeNav()">process</a>
-                <a href="#" onclick="closeNav()">résumé</a>
-                <a href="#" class="contact-btn" onclick="closeNav()">contact</a>
-            </nav> -->
         </div>
 
         <div class="header-content">
@@ -109,7 +88,7 @@
 
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
 
         <div class="side-heading">
             <p>projects</p>
@@ -170,10 +149,11 @@
         </div>
 
         <div class="testimonial">
-            <img src="images/avi.png" alt="client photo">
-            <h2>Client Name</h2>
-            <p>Risus nullam viverra ullamcorper faucibus etiam consequat nunc odio et elit et amet nulla id arcu, eu blandit est in</p>
-            <cite> - owner of client’s org</cite>
+            <q>Risus nullam viverra ullamcorper faucibus etiam consequat nunc odio et elit et amet nulla id arcu, eu blandit est in</q>
+            <span>
+                <img src="images/avi.png" alt="client photo">
+                <h2>Jane Doe</h2>
+            </span>
         </div>
 
         <img src="images/logo-watermark.svg" alt="" draggable="false" class="watermark">

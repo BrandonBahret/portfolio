@@ -27,8 +27,26 @@
 
     --accent-1: #406BBF;
     --accent-2: #5B7AE6;
+    --accent-lt: #4A5D94;
 
     --round-font: 'M PLUS Rounded 1c', sans-serif;
+    --section-margin-left: 4em;
+}
+
+@media(min-width: 1300px){
+    :root {
+        --section-margin-left: 7vw;
+    }
+}
+@media(max-width: 1100px){
+    :root {
+        font-size: 14px;
+    }
+}
+@media(max-width: 1000px){
+    :root {
+        font-size: 13px;
+    }
 }
 
 * {
@@ -38,11 +56,19 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3em;
+
+}
+
 h1,h2,h3,h4,p {
     margin: 0;
+    overflow: visible;
 }
 
 a {
+    color: var(--grey);
     text-decoration: none;
 }
 
@@ -78,6 +104,37 @@ body {
 }
 .btn-pill:hover {
     filter: grayscale(20%);
+}
+
+.btn-backtotop {
+    position: fixed;
+    z-index: 999;
+    right: 3em;
+    bottom: 3.5em;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    justify-content: center;
+    
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+    
+    /* border-radius: 50%; */
+    border-radius: 50em;
+    background: var(--accent-lt);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: opacity(70%);
+}
+.btn-backtotop img {
+    transition: all 0.15s ease;
+}
+.btn-backtotop:hover {
+    filter: brightness(120%);
+}
+.btn-backtotop:hover img {
+    transform: translateY(-0.2em);
 }
 
 .btn-grey {
