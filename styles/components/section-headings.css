@@ -1,4 +1,11 @@
 
+.alt-heading {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.3em;
+}
 
 .side-heading {
     display: flex;
@@ -16,8 +23,6 @@
     transform: skew(0, 6deg);
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
 }
-
-
 .side-heading p {
     margin: 0.5em 0;
     transform: skew(0, -6deg);

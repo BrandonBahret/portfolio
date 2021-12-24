@@ -1,87 +1,56 @@
 @import url(/styles/header/navigation-styles.css);
 
-/* @media(max-width: 890px){
-    .header-badge-wrap {
-        display: none;
-    }
-} */
-
 header {
     display: flex;
-
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+
+    padding: 2.5em 6vw;
 
     background: var(--bg-grad);
-}
-header * {
-    color: var(--soft-white);
+    min-height: 22em;
 }
 
-.header-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-    width: 85vw;
-    padding: 2.0em 0 0 0;
+header > * {
+    color: var(--soft-white);
 }
 
 .header-content {
     display: flex;
-
     flex-direction: row;
-    justify-content: space-between;
 
-    width: 85vw;
+    justify-content: space-between;
+    width: 100%;
 }
+
 .header-introduction {
     display: flex;
-
     flex-direction: column;
-    
-    height: min-content;
-    min-width: 35em;
-    max-width: min(45vw, 48em);
-    
-    margin: auto 4em;
+    align-self: center;
 }
+
 .header-introduction h1 {
+    font-size: 2.25em;
+    font-weight: bold;
     margin-bottom: 0.3em;
     
-    font-size: 2em;
-    font-weight: bold;
+    min-width: 16em;
+    max-width: 45vw;
 }
-.header-introduction h2 {
-    margin: 0;
+@media(max-width: 700px) {
+    .header-introduction h1 {
+        min-width: 85vw;
+    }
+}
 
-    font-size: 1.40em;
+.header-introduction h2 {
+    font-size: 1.3em;
+    max-width: 22em;
+    
+    word-spacing: 0.125em;
     font-weight: normal;
 }
-
-@media(max-width: 890px){    
-    header {
-        justify-content: center;
-        
-        padding-bottom: 2.5em;
-    }
-    
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 2em;
-    }
-    
-    .header-introduction {
-        min-width: initial;
-        max-width: initial;
-        width: initial;
-        /* margin: 0; */
-        margin: 1em;
-    }
-    .header-badge-wrap {
-        position: initial;
-
-        width: 100%;
-    }
+.header-introduction address {
+    white-space: nowrap;
 }
+

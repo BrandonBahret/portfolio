@@ -19,17 +19,17 @@ img[src$="images/chevron-left.svg"], img[src$="images/chevron-right.svg"] {
     box-shadow: var(--light-shadow);
 }
 .carousel-nav a:active {
-    background: #879DE5;
+    background: var(--accent-1);
 }
 
 .testimonial-inner {
-    display        : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
 
     justify-content: space-between;
 
     align-items: center;
-    max-width : 50em;
+    max-width: 50em;
     padding: 1em;
     height: min-content;
 }
@@ -38,27 +38,27 @@ img[src$="images/chevron-left.svg"], img[src$="images/chevron-right.svg"] {
     margin-bottom: 0em;
     text-align: center;
     font-family: var(--round-font);
-    font-size    : 1.5em;
+    font-size: 1.5em;
     padding: 0.5em;
 }
 
 .testimonial-inner>span {
-    display       : flex;
+    display: flex;
     flex-direction: row;
-    column-gap    : 1em;
-    align-items   : center;
+    column-gap: 1em;
+    align-items: center;
     padding: 0.55em;
 }
 .testimonial-inner .avi {
     object-fit: cover;
-    width     : 3.5em;
-    height    : 3.5em;
+    width: 3.5em;
+    height: 3.5em;
 
-    border       : 2px solid rgba(64, 113, 191, 0.2);
+    border: 2px solid rgba(64, 113, 191, 0.2);
     border-radius: 50%;
 }
 .testimonial-inner h2 {
-    font-size  : 1.5em;
-    margin     : 0.25em 0 0.4em 0;
+    font-size: 1.5em;
+    margin: 0.25em 0 0.4em 0;
     font-family: var(--round-font);
 }
