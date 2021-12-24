@@ -14,7 +14,7 @@ footer {
 .main-footer {
     color: var(--soft-white);
     max-width: 28em;
-    margin: 7em 0 4em var(--section-margin);
+    margin: 7em 0 4em 7.5vw;
 }
 .main-footer h2 {
     font-size: 2em;

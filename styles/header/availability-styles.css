@@ -41,9 +41,3 @@
 
     background: linear-gradient(180deg, #4082BF 3.65%, #406BBF 67.19%);
 }
-
-@media(max-width: 790px) {
-    .header-badge-wrap {
-        display: none;
-    }
-}

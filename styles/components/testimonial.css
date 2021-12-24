@@ -4,7 +4,7 @@
     flex-direction: row;
 
     align-items: center;
-    column-gap: 2.5em;
+    column-gap: 2em;
 }
 
 img[src$="images/chevron-left.svg"], img[src$="images/chevron-right.svg"] {

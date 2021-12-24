@@ -6,9 +6,20 @@ header {
     justify-content: space-between;
 
     padding: 2.5em 6vw;
-
+    margin-bottom: 8em;
+    
     background: var(--bg-grad);
     min-height: 22em;
+}
+
+@media(max-width: 790px) {
+    header{
+        margin-bottom: 0;
+    }
+
+    .header-badge-wrap {
+        display: none;
+    }
 }
 
 header > * {
