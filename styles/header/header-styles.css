@@ -44,11 +44,11 @@ header * {
     min-width: 35em;
     max-width: min(45vw, 48em);
     
-    margin-left: 4em;
+    margin: auto 4em;
 }
 .header-introduction h1 {
     margin-bottom: 0.3em;
-
+    
     font-size: 2em;
     font-weight: bold;
 }
@@ -61,26 +61,23 @@ header * {
 
 @media(max-width: 890px){    
     header {
-        align-items: center;
-
+        justify-content: center;
+        
         padding-bottom: 2.5em;
     }
-    .header-inner {
-        align-items: center;
-
-        width: 90%;
-    }
+    
     .header-content {
         flex-direction: column;
         align-items: center;
         row-gap: 2em;
     }
-
+    
     .header-introduction {
         min-width: initial;
         max-width: initial;
         width: initial;
-        margin: 0;
+        /* margin: 0; */
+        margin: 1em;
     }
     .header-badge-wrap {
         position: initial;
