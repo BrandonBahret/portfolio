@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     
-    margin: 9em 4em 7em var(--section-margin-left);
+    margin: 9em 4em 7em var(--section-margin);
     column-gap: 30px;
 }
 
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: row;
 
-    margin: 5em 4em 9em var(--section-margin-left);
+    margin: 5em 4em 9em var(--section-margin);
     column-gap: 5em;
 }
 .portfolio-collection {
@@ -27,7 +27,7 @@
     flex-direction: column;
     
     align-items: center;
-    margin: 5em 4em 8em var(--section-margin-left);
+    margin: 5em 4em 8em var(--section-margin);
 }
 
 .watermark {
