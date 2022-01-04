@@ -8,7 +8,7 @@
     margin: 5em var(--section-margin) 7em var(--section-margin);
     column-gap: 2em;
 }
-@media(max-width: 876px) {
+@media(max-width: 945px) {
     .services .side-heading {
         display: none;
     }

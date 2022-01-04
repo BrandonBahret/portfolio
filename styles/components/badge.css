@@ -10,7 +10,7 @@
     width: 16em;
     height: 20em;
     border-radius: 3px;
-    padding: 3.5em 1.3em 2em 1.3em;
+    padding: 3.5em 1.4em 2em 1.4em;
     
     background: var(--bg-grad);
     color: var(--soft-white);
@@ -37,5 +37,5 @@
 .badge p {
     font-family: var(--round-font);
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }

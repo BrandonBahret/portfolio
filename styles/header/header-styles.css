@@ -10,9 +10,10 @@ header {
     
     background: var(--bg-grad);
     min-height: 22em;
+    min-height: 32vh;
 }
 
-@media(max-width: 790px) {
+@media(max-width: 876px) {
     header{
         margin-bottom: 0;
     }
@@ -48,20 +49,19 @@ header > * {
     min-width: 16em;
     max-width: 45vw;
 }
-@media(max-width: 700px) {
+@media(max-width: 876px) {
     .header-introduction h1 {
         min-width: 85vw;
     }
 }
-
 .header-introduction h2 {
     font-size: 1.3em;
-    max-width: 22em;
     
     word-spacing: 0.125em;
     font-weight: normal;
 }
 .header-introduction address {
+    display: inline;
     white-space: nowrap;
+    width: min-content;
 }
-
