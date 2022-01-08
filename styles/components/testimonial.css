@@ -39,7 +39,7 @@ img[src$="images/chevron-left.svg"], img[src$="images/chevron-right.svg"] {
     text-align: center;
     font-family: var(--round-font);
     font-size: 1.5em;
-    padding: 0.5em;
+    padding: 0.5em 0;
 }
 
 .testimonial-inner>span {
@@ -61,4 +61,10 @@ img[src$="images/chevron-left.svg"], img[src$="images/chevron-right.svg"] {
     font-size: 1.5em;
     margin: 0.25em 0 0.4em 0;
     font-family: var(--round-font);
+}
+
+@media(max-width: 580px) {
+    .testimonial>a {
+        display: none;
+    }
 }
