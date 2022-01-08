@@ -5,22 +5,11 @@ header {
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 2.5em 6vw;
+    padding: 3em 6vw;
     margin-bottom: 8em;
     
     background: var(--bg-grad);
-    min-height: 22em;
-    min-height: 32vh;
-}
-
-@media(max-width: 876px) {
-    header{
-        margin-bottom: 0;
-    }
-
-    .header-badge-wrap {
-        display: none;
-    }
+    min-height: 21em;
 }
 
 header > * {
@@ -32,6 +21,7 @@ header > * {
     flex-direction: row;
 
     justify-content: space-between;
+    column-gap: 2vw;
     width: 100%;
 }
 
@@ -49,11 +39,6 @@ header > * {
     min-width: 16em;
     max-width: 45vw;
 }
-@media(max-width: 876px) {
-    .header-introduction h1 {
-        min-width: 85vw;
-    }
-}
 .header-introduction h2 {
     font-size: 1.3em;
     
@@ -64,4 +49,27 @@ header > * {
     display: inline;
     white-space: nowrap;
     width: min-content;
+}
+
+@media(max-width: 1000px) {
+    header {
+        padding: 3em 5vw;
+    }
+}
+@media(max-width: 845px) {
+    header{
+        margin-bottom: 0;
+    }
+    .header-badge-wrap {
+        display: none;
+    }
+
+    .header-introduction h1 {
+        min-width: unset;
+        max-width: unset;
+    }
+    .header-introduction h2 {
+        min-width: unset;
+        max-width: unset;
+    }
 }
