@@ -2,13 +2,18 @@
 footer {
     display: flex;
     flex-direction: column;
-    
+
     background: var(--bg-grad);
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
 
     box-shadow: -4px 64px 62px -48px rgba(0,0,0,0.4) inset;
     -webkit-box-shadow: -4px 64px 62px -48px rgba(0,0,0,0.4) inset;
     -moz-box-shadow: -4px 64px 62px -48px rgba(0,0,0,0.4) inset;
+}
+
+footer .flex-row {
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .main-footer {
@@ -49,4 +54,15 @@ footer {
     display: flex;
     flex-direction: row;
     column-gap: 1.25em;
+}
+
+.watermark {
+    overflow: hidden;
+    width: 30em;
+    height: 34em;
+
+    z-index: -1;
+    margin: -5em -7em;
+    transform: translateY(10%);
+    filter: brightness(65%);
 }

@@ -1,0 +1,10 @@
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 35em;
+
+    margin: 5em var(--section-margin) 7em var(--section-margin);
+    row-gap: 1em;
+}

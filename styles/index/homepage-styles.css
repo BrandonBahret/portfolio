@@ -81,13 +81,3 @@
     align-items: center;
     
 }
-
-.watermark {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-
-    width: 30em;
-    filter: brightness(95%);
-    transform: translateY(-10%);
-}

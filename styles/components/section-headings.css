@@ -36,3 +36,20 @@
     margin: 0;
     transform: skew(0, -6deg);
 }
+
+
+.section-heading {
+    display: block;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 2px var(--light-grey) solid;
+}
+.section-heading>p, .section-heading>h2 {
+    display: inline;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: var(--dark-blue);
+}
+.section-heading>p {
+    font-weight: bold;
+}
