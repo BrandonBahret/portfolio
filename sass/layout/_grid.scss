@@ -1,7 +1,7 @@
 .main-grid {
     display: grid;
     padding-block: var(--margin) calc(var(--margin) * 2.5);
-    row-gap: var(--margin-lg);
+    row-gap: var(--row-gap, var(--margin-lg));
     // column-gap: var(--margin);
 
     grid-template-columns: 1fr;

@@ -66,6 +66,9 @@
     font-size: var(--fs-400);
     font-weight: 400;
 }
+.section-heading::first-letter {
+    text-transform: uppercase;
+}
 .section-heading::after {
     content: '';
 
@@ -80,7 +83,6 @@
 .section__title {
     color: var(--clr-dark);
 
-    text-transform: capitalize;
     font-family: var(--ff-display);
     font-weight: 900;
 }

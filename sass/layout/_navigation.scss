@@ -22,7 +22,9 @@
 .primary-navigation a {
     border-bottom: transparent 2px solid;
     color: var(--clr-on-primary--200);
+
     font-size: var(--fs-200);
+    text-decoration: none;
 }
 .primary-navigation a[aria-selected=false]:hover {
     border-bottom: var(--clr-on-primary--200) 2px solid;

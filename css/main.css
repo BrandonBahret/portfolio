@@ -80,6 +80,14 @@ html, body {
   --ff-display: var(--ff-serif);
 }
 
+.fnt-sans {
+  font-family: var(--ff-sans) !important;
+}
+
+.fnt-display {
+  font-family: var(--ff-display) !important;
+}
+
 body {
   font-family: var(--ff-sans);
   font-style: normal;
@@ -95,17 +103,65 @@ body {
   font-size: 1.1em;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.indent {
+  text-indent: var(--indent, 1rem);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--ff-display);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: var(--clr-accent);
 }
 
 address {
   display: inline;
+}
+
+.article-segment-group {
+  --col-gap: 0;
+  max-width: 55em;
+}
+
+.article-segment {
+  --col-gap: 0;
+  max-width: 95%;
+  font-size: var(--fs-300);
+  text-align: justify;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+.article-segment :is(h1, h2, h3, h4, h5, h6) {
+  text-align: left;
+}
+
+.section-heading + .article-segment {
+  margin-top: var(--section-heading-gap, 1.15rem);
+}
+
+.article-segment + .article-segment {
+  margin-top: var(--segment-gap, 2.3rem);
+}
+
+.article-segment :is(h1, h2, h3, h4, h5, h6) + p {
+  margin-top: var(--segment-heading-gap, 0.5rem);
+}
+
+.article-segment p + p {
+  margin-top: var(--segment-paragraph-gap, 1.15rem);
 }
 
 .container {
@@ -205,6 +261,7 @@ address {
   border-bottom: transparent 2px solid;
   color: var(--clr-on-primary--200);
   font-size: var(--fs-200);
+  text-decoration: none;
 }
 
 .primary-navigation a[aria-selected=false]:hover {
@@ -330,7 +387,7 @@ address {
 .main-grid {
   display: grid;
   padding-block: var(--margin) calc(var(--margin) * 2.5);
-  row-gap: var(--margin-lg);
+  row-gap: var(--row-gap, var(--margin-lg));
   grid-template-columns: 1fr;
 }
 @media (min-width: 65rem) {
@@ -542,6 +599,10 @@ address {
   gap: 2em;
 }
 
+.subfooter__links a {
+  color: inherit;
+}
+
 ::-webkit-scrollbar {
   width: var(--scroll-width);
   height: var(--scroll-width);
@@ -564,6 +625,7 @@ address {
   font-size: var(--fs-100);
   font-variation-settings: "wght" 610;
   text-transform: capitalize;
+  text-decoration: none;
 }
 
 [class*=btn-]:hover,
@@ -691,6 +753,10 @@ address {
   font-weight: 400;
 }
 
+.section-heading::first-letter {
+  text-transform: uppercase;
+}
+
 .section-heading::after {
   content: "";
   display: block;
@@ -702,7 +768,6 @@ address {
 
 .section__title {
   color: var(--clr-dark);
-  text-transform: capitalize;
   font-family: var(--ff-display);
   font-weight: 900;
 }
@@ -725,6 +790,7 @@ address {
   -webkit-box-shadow: var(--shadow-400);
           box-shadow: var(--shadow-400);
   border-radius: 6px;
+  text-decoration: none;
 }
 
 .service__icon > img {
@@ -891,41 +957,4 @@ address {
   aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--clr-neutral);
-}
-
-.article-segment-group {
-  --col-gap: 0;
-  max-width: 55em;
-}
-
-.article-segment {
-  --col-gap: 0;
-  max-width: 95%;
-  font-size: var(--fs-300);
-  text-align: justify;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
-
-.article-segment :is(h1, h2, h3, h4, h5, h6) {
-  text-align: left;
-}
-
-.section-heading + .article-segment {
-  margin-top: 1.2rem;
-}
-
-.article-segment + .article-segment {
-  margin-top: 3.5rem;
-}
-
-.article-segment :is(h1, h2, h3, h4, h5, h6) + p {
-  margin-top: 0.75rem;
-}
-
-.article-segment p + p {
-  margin-top: 2rem;
 }

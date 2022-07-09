@@ -23,6 +23,13 @@
     --ff-display: var(--ff-serif);    
 }
 
+.fnt-sans {
+    font-family: var(--ff-sans) !important;
+}
+.fnt-display {
+    font-family: var(--ff-display) !important;
+}
+
 body {
     font-family: var(--ff-sans);
     font-style: normal;
@@ -37,17 +44,64 @@ body {
     font-weight: 600;
     font-size: 1.1em;
 }
+.uppercase {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+.indent {
+    text-indent: var(--indent, 1rem);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--ff-display);
 }
 
 a {
-    color: inherit;
-    
-    text-decoration: none;
+    color: var(--clr-accent);
 }
 
 address {
     display: inline;
+}
+
+.article-segment-group {
+    --col-gap: 0;
+    max-width: 55em;
+}
+
+.article-segment {
+    --col-gap: 0;
+    max-width: 95%;
+    
+    font-size: var(--fs-300);
+
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+}
+.article-segment :is(h1, h2, h3, h4, h5, h6) {
+    text-align: left;
+}
+
+// margin between section headings and segments
+.section-heading + .article-segment {
+    margin-top: var(--section-heading-gap, 1.15rem);
+}
+
+// margin between segments
+.article-segment + .article-segment {
+    margin-top: var(--segment-gap, 2.3rem);
+}
+
+// margin between segment titles and content
+.article-segment :is(h1, h2, h3, h4, h5, h6) + p {
+    margin-top: var(--segment-heading-gap, 0.5rem);
+}
+
+// margin between segment paragraphs
+.article-segment p + p {
+    margin-top: var(--segment-paragraph-gap, 1.15rem);
 }
