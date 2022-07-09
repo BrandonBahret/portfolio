@@ -1,0 +1,65 @@
+
+.introduction {
+
+}
+
+.section-icon > img { 
+    max-width: 85%;
+    max-height: 60%;
+    padding: 0 15%;
+}
+.section-icon {
+    align-self: start;
+    transform: translateY(-25%);
+
+    display: grid;
+    // display: none;
+    place-items: center;
+
+    min-width: 4rem;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    background-color: var(--clr-neutral);
+}
+
+
+.article-segment-group {
+    --col-gap: 0;
+    max-width: 55em;
+}
+
+.article-segment {
+    --col-gap: 0;
+    max-width: 95%;
+    
+    font-size: var(--fs-300);
+
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+}
+.article-segment :is(h1, h2, h3, h4, h5, h6) {
+    text-align: left;
+}
+
+// margin between section headings and segments
+.section-heading + .article-segment {
+    margin-top: 1.2rem;
+}
+
+// margin between segments
+.article-segment + .article-segment {
+    margin-top: 3.5rem;
+}
+
+// margin between segment titles and content
+.article-segment :is(h1, h2, h3, h4, h5, h6) + p {
+    margin-top: 0.75rem;
+}
+
+// margin between segment paragraphs
+.article-segment p + p {
+    margin-top: 2rem;
+}

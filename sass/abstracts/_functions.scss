@@ -1,0 +1,39 @@
+
+@function lerp($a, $b, $t) {
+    $result: calc(($a * (1 - $t)) + ($b * $t));
+    @return $result;
+}
+
+@function scaledLerp($a, $b, $s, $t) {
+    $result: calc(($a * (1 - $s * $t)) + ($b * $t * $s));
+    @return $result;
+}
+
+@function ilerp($a, $b, $v) {
+    $result: calc(($v - $a) / ($b - $a));
+    @return $result;
+}
+
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+
+    @return $number;
+}
+
+/* uses linear interpolation to scale font-sizes based on screen size. */
+@function fs-fluid($min-fs, $max-fs, $scaleRate: 1) {
+    $ai: strip-unit($bp-phone);
+    $bi: strip-unit($bp-monitor);
+    $ao: strip-unit($min-fs);
+    $bo: strip-unit($max-fs);
+    $s: $scaleRate;
+    $v: var(--client-width);
+
+    $mapped-val: scaledLerp($ao, $bo, $s, ilerp($ai, $bi, $v));
+    $mapped-val: calc($mapped-val * 1rem);
+    $mapped-val: clamp($min-fs, $mapped-val, $max-fs);
+
+    @return $mapped-val;
+}

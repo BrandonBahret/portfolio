@@ -1,0 +1,26 @@
+.main-grid {
+    display: grid;
+    padding-block: var(--margin) calc(var(--margin) * 2.5);
+    row-gap: var(--margin-lg);
+    // column-gap: var(--margin);
+
+    grid-template-columns: 1fr;
+    @media (min-width: $bp-monitor) {
+        --side-heading-width: #{fs-fluid(10rem, 13rem, 1)};
+        grid-template-columns: var(--side-heading-width) 1fr;
+
+        .side-heading {
+            grid-column: 1 / span 1;
+        }
+        
+        section {
+            grid-column: 2 / span 1;
+            margin-inline: var(--margin-lg);
+        }
+    }
+    @media (min-width: $bp-desktop) {
+        --side-heading-width: #{fs-fluid(10rem, 15rem, 0.6)};
+        grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
+        // column-gap: var(--margin-lg);
+    }
+}

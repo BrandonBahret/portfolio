@@ -1,0 +1,32 @@
+
+.heading-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: var(--margin-sm) var(--margin-xs) var(--margin-xs);
+    
+    // max-width: clamp(min(100%, 15rem), 20vw + 1rem, 16rem);
+    max-width: #{fs-fluid(11.5rem, 16rem, 0.5)};
+    min-width: 11.5rem;
+    aspect-ratio: 1 / 0.9;
+    border-bottom: var(--clr-accent) solid 5px;
+    border-radius: 4px;
+    
+    background-color: var(--bg-card);
+    color: var(--clr-on-neutral--100);
+    box-shadow: var(--shadow-500);
+
+    font-size: #{fs-fluid(1.000rem, 1.44rem, 0.5)};
+    text-align: center;
+}
+
+.heading-badge__title {
+    font-size: var(--fs-400);
+}
+.heading-badge em {
+    font-style: normal;
+    color: var(--clr-accent);
+}

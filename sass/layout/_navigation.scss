@@ -1,0 +1,94 @@
+.menu-toggle {
+    display: none;
+    z-index: 9000;
+}
+
+.primary-navigation {
+    max-width: 100%;
+    z-index: 8000;
+}
+
+.primary-navigation > ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+
+    list-style: none;
+}
+
+.primary-navigation a {
+    border-bottom: transparent 2px solid;
+    color: var(--clr-on-primary--200);
+    font-size: var(--fs-200);
+}
+.primary-navigation a[aria-selected=false]:hover {
+    border-bottom: var(--clr-on-primary--200) 2px solid;
+}
+.primary-navigation a[aria-selected=true] {
+    border-bottom: var(--clr-on-primary--100) 2px solid;
+    color: var(--clr-on-primary--100);
+}
+
+@media (max-width: $bp-tablet) {
+    .menu-toggle {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        z-index: 9999;
+        
+        display: initial;
+        border: none;
+        width: 2rem;
+        aspect-ratio: 1;
+
+        background-color: transparent;
+        background-repeat: no-repeat;
+        color: black;
+        
+        cursor: pointer;
+    }
+    .menu-toggle[aria-expanded=false] {
+        background-image: url(/assets/images/menu.svg);
+    }
+    .menu-toggle[aria-expanded=true] {
+        position: fixed;
+        background-image: url(/assets/images/close.svg);
+    }
+
+    .primary-navigation {
+        position: fixed;        
+        inset: 0 0 0 20%;
+
+        padding: 20% 12.5%;
+
+        background-color: var(--clr-dark);
+        box-shadow: -35px -16px 25px hsl(var(--hsl-black) / 0.2);
+    }
+    .primary-navigation[data-animate=true] {
+        transition: transform 350ms ease, opacity 300ms ease;
+    }
+    .primary-navigation[data-visible=false] {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    .primary-navigation[data-visible=true] {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .primary-navigation > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 2em;
+
+        width: 100%;
+        height: 100%;
+    }
+    .primary-navigation a {
+        font-size: var(--fs-500);
+    }
+}

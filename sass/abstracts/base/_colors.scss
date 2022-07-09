@@ -1,0 +1,36 @@
+:root {
+    /*    colors    */
+    --hsl-black: 0 0% 10%;
+    --clr-black: hsl(var(--hsl-black));
+    --clr-dark: hsl(226, 44%, 14%);
+    
+    --clr-grey: hsl(226, 30%, 28%);
+    --clr-light-grey: hsl(210, 7%, 95%);
+    --clr-white: hsl(224, 90%, 99%);
+    --clr-soft-white: hsl(224, 10%, 91%);
+
+    --clr-primary: hsl(224, 43%, 25%);
+    --clr-accent: hsl(222, 71%, 56%);
+    --clr-neutral: hsl(201, 40%, 90%);
+
+    --clr-on-primary--100: var(--clr-white);
+    --clr-on-primary--200: var(--clr-soft-white);
+    --clr-on-neutral--100: hsl(227 43% 10%);
+    --clr-on-neutral--200: var(--clr-primary);
+
+    --clr-logo-top: hsl(226, 25%, 90%);
+    --clr-logo-bottom: hsl(227, 25%, 67%);
+
+    /*    background properties    */
+    --bg-grad-start: var(--clr-primary);
+    --bg-grad-end: hsl(213, 42%, 33%);
+    --bg-grad: linear-gradient(180deg, var(--bg-grad-start) 20%, var(--bg-grad-end) 100%);
+    
+    --bg-card: hsl(208, 5%, 99%);
+    --bg-body: var(--clr-white);
+
+    /*    shadow properties    */
+    --shadow-300: 1px 4px 4px hsl(var(--hsl-black) / 0.04);
+    --shadow-400: 2px 4px 6px -1px hsl(var(--hsl-black) / 0.23);
+    --shadow-500: 4px 10px 10px -1px hsl(var(--hsl-black) / 0.3);
+}

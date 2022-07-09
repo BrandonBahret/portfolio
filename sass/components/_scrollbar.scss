@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: var(--scroll-width);
+    height: var(--scroll-width);
+    background-color: var(--scroll-track);
+}
+
+::-webkit-scrollbar-track {
+    margin-block: 4px;
+    background-color: var(--scroll-track);
+}
+
+::-webkit-scrollbar-thumb {
+    border: solid calc(var(--scroll-width) * 0.1875) var(--scroll-track);
+    border-radius: 100vmax;
+    background-color: var(--scroll-thumb);
+}

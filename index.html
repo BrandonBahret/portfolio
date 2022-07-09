@@ -1,191 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/index/index-styles.css">
-    <link rel="stylesheet" href="styles/index/homepage-styles.css">
-</head>
-<body>
-    <a href="#header" class="btn-backtotop">
-        <img src="images/up-arrow.svg" alt="back to top">
-    </a>
-    <header id="header">
-    <!-- <div class="header-inner"> -->
-        <div class="navigation">
-            <div class="wordmark">
-                <img src="images/logo.svg" alt="" draggable="false" id="wordmark-logo">
-                <h1 id="wordmark-text">Brandon<br>Bahret</h1>
-                <img src="images/anchor-vector.svg" alt="" id="wordmark-anchor">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>portfolio</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./scripts/css-helpers.js" defer></script>
+    </head>
+    <body>
+        <header class="heading-primary">
+            <img class="logo-mark" src="./assets/images/logo.svg" alt="">
+            <div class="logo-wordmark">
+                <p>Brandon</p>
+                <p>Bahret</p>
             </div>
-    
-            <nav>
-                <a href="">home</a>
-                <a href="#portfolio">portfolio</a>
-                <a href="process.html">process</a>
-                <a href="#" class="contact-btn">contact</a>
+            <img class="logo-anchor" src="./assets/images/logo-anchor.svg" alt="">
+
+            <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
+            <nav data-visible="false" data-animate="false" class="primary-navigation">
+                <ul>
+                    <li><a aria-selected="true" href="index.html">Home</a></li>
+                    <li><a aria-selected="false" href="index.html#portfolio">Portfolio</a></li>
+                    <li><a aria-selected="false" href="process.html">Process</a></li>
+                    <li><a aria-selected="false" href="contact.html">Contact</a></li>
+                </ul>
             </nav>
-        </div>
 
-        <div class="header-content">
-            <article class="header-introduction">
-                <h1>I’m a software developer based in <address>Ellerslie, Georgia.</address></h1>
-                <h2>I design websites to help others serve their communities.</h2>
-            </article>
-
-            <article class="header-badge-wrap">
-                <div class="header-badge">
-                    <h1>Availability</h1>
-                    <h2>
-                        <em>[Yes]</em> – I'm looking for new projects.
-                    </h2>
-                    <a href="#" class="btn-grey">hire me</a>
-                </div>
-                <div class="border-accent"></div>
-            </article>
-        </div>
-    <!-- </div> -->
-    </header>
-
-    <section class="services">
-
-        <div class="side-heading">
-            <p>capabilities</p>
-            <h2>I have you covered. Every step of the way...</h2>
-        </div>
-
-        <div class="badge" id="services-abbr">
-            <img src="images/design-icon.svg" class="badge-icon">
-    
-            <h3>process</h3>
-            <p>Tap here to learn about each stage of my development process.</p>
-            <a href="#" class="btn-grey">learn more</a>
-        </div>
-
-        <div class="badge">
-            <img src="images/design-icon.svg" class="badge-icon">
-    
-            <h3>design</h3>
-            <p>creating a design that reflects your goals.</p>
-            <a href="#" class="btn-grey">learn more</a>
-        </div>
-
-        <div class="badge">
-            <img src="images/code-icon.svg" class="badge-icon">
-    
-            <h3>develop</h3>
-            <p>coding smooth experiences across devices.</p>
-            <a href="#" class="btn-grey">learn more</a>
-        </div>
-
-        <div class="badge">
-            <img src="images/deploy-icon.svg" class="badge-icon">
-    
-            <h3>deploy</h3>
-            <p>finding a secure place for your website to live.</p>
-            <a href="#" class="btn-grey">learn more</a>
-        </div>
-
-    </section>
-
-    <section class="portfolio" id="portfolio">
-
-        <div class="side-heading">
-            <p>projects</p>
-            <h2>Gauge my skill-level with these real projects.</h2>
-        </div>
-
-        <div class="portfolio-collection">
-            <div class="portolio-item">
-                <img src="images/tetris-ai-thumb.png" alt="">
-
-                <div>
-                    <h2>Tetris Ai</h2>
-                    <p>An automation that plays Tetris using nothing but screen data built with Python, OpenCV, and NumbaJit.</p>
-
-                    <div>
-                        <a href="https://github.com/BrandonBahret/tetris_ai" class="btn-grey" target="_blank">view source</a>
-                        <a href="https://www.youtube.com/watch?v=-Bys0PalZb8" class="btn-grey" target="_blank">demo</a>
-                    </div>
-                </div>
+            <div class="header__desc">
+                <h1 class="header__title">Hello, I create software here in <address>Ellerslie, Georgia.</address></h1>
+                <p>websites | mobile apps | and <em>more...</em></p>
             </div>
             
-            <div class="portolio-item">
-                <img src="images/tetris-ai-thumb.png" alt="">
-
-                <div>
-                    <h2>Tetris Ai</h2>
-                    <p>An automation that plays Tetris using nothing but screen data built with Python, OpenCV, and NumbaJit.</p>
-
-                    <div>
-                        <a href="https://github.com/BrandonBahret/tetris_ai" class="btn-grey" target="_blank">view source</a>
-                        <a href="https://www.youtube.com/watch?v=-Bys0PalZb8" class="btn-grey" target="_blank">demo</a>
-                    </div>
-                </div>
+            <div class="heading-badge">
+                <h3 class="heading-badge__title">Availability</h3>
+                <p><em>[Yes]</em> - I'm looking for new projects.</p>
+                <a class="btn-flat" href="contact.html">hire me</a>
             </div>
+        </header>
 
-            <div class="portolio-item">
-                <img src="images/tetris-ai-thumb.png" alt="">
-
-                <div>
-                    <h2>Tetris Ai</h2>
-                    <p>An automation that plays Tetris using nothing but screen data built with Python, OpenCV, and NumbaJit.</p>
-
-                    <div>
-                        <a href="https://github.com/BrandonBahret/tetris_ai" class="btn-grey" target="_blank">view source</a>
-                        <a href="https://www.youtube.com/watch?v=-Bys0PalZb8" class="btn-grey" target="_blank">demo</a>
-                    </div>
-                </div>
+        <main class="container main-grid">
+            <!-- === services ===  -->
+            <div class="side-heading">
+                <h3 class="side-heading__title">services</h3>
+                <p>Every step <span class="wrap-avoid">in the</span> devlopment pipeline...</p>
             </div>
-        </div>
-
-    </section>
-
-    <section class="testimonials">
-        <!-- <div class="side-heading">
-            <p>testimonials</p>
-            <h2>Read what other local business owners have said.</h2>
-        </div> -->
-
-        <h2 class="alt-heading">testimonials</h2>
-
-        <div class="testimonial">
-            <a href=""><img src="images/chevron-left.svg" alt="navigate to previous testimonial"></a>
             
-            <div class="testimonial-inner">
-                <q>Risus nullam viverra ullamcorper faucibus etiam consequat nunc odio et elit et amet nulla id arcu, eu blandit est in</q>
-                <span>
-                    <h2>– Jane Doe</h2>
-                    <img src="images/avi.png" alt="client photo" class="avi">
+            <section class="services">
+                <a class="service-card phone-only" href="process.html">
+                    <div class="service__icon"><img src="./assets/images/bolt.svg" alt=""></div>
+                    <div class="service__desc">
+                        <h3 class="service__title">process</h3>
+                        <p>learn about my development process in this article</p>
+                    </div>
+                </a>
+
+                <div class="service-card tablet-and-up">
+                    <div class="service__icon"><img src="./assets/images/pen.svg" alt=""></div>
+                    <div class="service__desc">
+                        <h3 class="service__title">design</h3>
+                        <p>creating a design that reflects your goals.</p>
+                    </div>
+                    <a class="btn-flat" href="process.html#design">learn more</a>
+                </div>
+                
+                <div class="service-card tablet-and-up">
+                    <div class="service__icon"><img src="./assets/images/code.svg" alt=""></div>
+                    <div class="service__desc">
+                        <h3 class="service__title">develop</h3>
+                        <p>coding smooth experiences across devices.</p>
+                    </div>
+                    <a class="btn-flat" href="process.html#develop">learn more</a>
+                </div>
+                
+                <div class="service-card tablet-and-up">
+                    <div class="service__icon"><img src="./assets/images/bolt.svg" alt=""></div>
+                    <div class="service__desc">
+                        <h3 class="service__title">deploy</h3>
+                        <p>finding a secure place for your website to live.</p>
+                    </div>
+                    <a class="btn-flat" href="process.html#deploy">learn more</a>
+                </div>
+            </section>
+            <!-- / === services ===  -->
+
+
+            <!-- === projects ===  -->
+            <div class="side-heading">
+                <h3 class="side-heading__title">projects</h3>
+                <p>Gauge my <span class="wrap-avoid">skill-level</span> with these real projects.</p>
+            </div>
+            
+            <section id="portfolio" class="projects col">
+                <div class="project-card">
+                    <img class="project__img" src="./assets/images/project-tetris.png" alt="">
+                    <div class="project__desc">
+                        <h2>Tetris AI</h2>
+                        <p>
+                            An automation that plays Tetris using nothing but
+                            screen data built with Python, OpenCV, and NumbaJit.
+                        </p>
+                    </div>
+                    <span class="project__actions row">
+                        <a class="btn-flat" href="https://github.com/BrandonBahret/tetris_ai" target="_blank">view source</a>
+                        <a class="btn-flat" href="https://www.youtube.com/watch?v=-Bys0PalZb8" target="_blank">demo</a>
+                    </span>
+                </div>
+
+                <div class="project-card">
+                    <img class="project__img" src="./assets/images/project-tetris.png" alt="">
+                    <div class="project__desc">
+                        <h2>Tetris AI</h2>
+                        <p>
+                            An automation that plays Tetris using nothing but
+                            screen data built with Python, OpenCV, and NumbaJit.
+                        </p>
+                    </div>
+                    <span class="project__actions row">
+                        <a class="btn-flat" href="https://github.com/BrandonBahret/tetris_ai" target="_blank">view source</a>
+                        <a class="btn-flat" href="https://www.youtube.com/watch?v=-Bys0PalZb8" target="_blank">demo</a>
+                    </span>
+                </div>
+                
+                <div class="project-card">
+                    <img class="project__img" src="./assets/images/project-tetris.png" alt="">
+                    <div class="project__desc">
+                        <h2>Tetris AI</h2>
+                        <p>
+                            An automation that plays Tetris using nothing but
+                            screen data built with Python, OpenCV, and NumbaJit.
+                        </p>
+                    </div>
+                    <span class="project__actions row">
+                        <a class="btn-flat" href="https://github.com/BrandonBahret/tetris_ai" target="_blank">view source</a>
+                        <a class="btn-flat" href="https://www.youtube.com/watch?v=-Bys0PalZb8" target="_blank">demo</a>
+                    </span>
+                </div>
+            </section>
+            <!-- / === projects ===  -->
+        </main>
+        
+        <footer>
+            <div class="footer">
+                <div class="footer__desc">
+                    <h2 class="footer_title">Let's begin a dialouge.</h2>
+                    <p>Discover how a thoughtfully designed website can add value to your business.</p>
+                </div>
+                <a class="footer__cta btn-pill" href="contact.html">Contact <img src="./assets/images/dialog.svg" alt=""></a>
+                <div class="watermark"><img src="./assets/images/logo-watermark.svg" alt="" draggable="false"></div>
+            </div>
+
+            <div class="subfooter">
+                <p>© 2021 Brandon Bahret</p>
+                <span class="subfooter__links">
+                    <a href="https://www.linkedin.com/in/brandon-bahret-436012125/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/BrandonBahret" target="_blank">Github</a>
                 </span>
-                <span class="carousel-nav"><a href=""></a><a href="" active></a><a href=""></a></span>
             </div>
-            
-            <a href=""><img src="images/chevron-right.svg" alt="navigate to next testimonial"></a>
-        </div>
-
-    </section>
-    
-    <footer>
-        <div class="flex-row">
-            <div class="main-footer">
-                <h2>Let's begin a dialouge.</h2>
-                <p>Discover how a thoughtfully designed website can add value to your business.</p>
-                <a href="#" class="btn-pill">Contact<img src="images/comment-bubble.svg" alt="" class="btn-icon"></a>
-            </div>
-            <img src="images/logo-watermark.svg" alt="" draggable="false" class="watermark">
-        </div>
-        <div class="sub-footer">
-            <p>© 2021 Brandon Bahret</p>
-            <span>
-                <a href="https://www.linkedin.com/in/brandon-bahret-436012125/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/BrandonBahret" target="_blank">Github</a>
-            </span>
-        </div>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>

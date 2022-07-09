@@ -1,0 +1,101 @@
+.heading-primary {
+    padding: var(--margin-md)  var(--margin);
+
+    background-color: var(--bg-grad-start);
+    background-image: var(--bg-grad);
+    color: var(--clr-on-primary--100);
+
+    display: grid;
+    grid-template-columns: max-content 1rem min-content 1fr;
+    grid-template-rows: min-content min-content 2rem 1fr;
+
+    grid-template-areas: 
+        "l . w n"
+        ". . a ."
+        ". . . ."
+        "i i i i";
+    
+    @media (min-width: $bp-tablet) {
+        margin-bottom: 2rem;
+
+        grid-template-columns: max-content 1em min-content repeat(3, 1fr) 7% 2fr;
+        grid-template-rows: min-content min-content 2rem 1fr min-content;
+        grid-template-areas: 
+            "l . w n n n n n"
+            ". . a . . . . ."
+            ". . . . . . . ."
+            ". . . . . . . ."
+            "i i i i i i . b";
+    }
+
+    @media (min-width: $bp-monitor) {
+        margin-bottom: 4rem;
+
+        grid-template-areas: 
+            "l . w n n n n n"
+            ". . a . . . . ."
+            ". . . . . . . ."
+            ". . . . . . . ."
+            ". . i i i i . b";
+    }
+}
+
+
+.logo-mark {
+    grid-area: l;
+    width: #{fs-fluid(2.289rem, 2.757rem)};
+}
+.logo-wordmark {
+    grid-area: w;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    
+    font-variation-settings: 'wght' 600;
+    font-size: #{fs-fluid(1.2rem, 1.4rem)};
+    line-height: 125%;
+    letter-spacing: 0.25px;
+}
+.logo-anchor {
+    grid-area: a;
+    justify-self: end;
+    
+    width: #{fs-fluid(1.27rem, 1.55rem)} 
+}
+
+.primary-navigation {
+    grid-area: n;
+}
+
+.header__title {
+    font-size: var(--fs-700);
+    letter-spacing: -1px;
+}
+.header__desc {
+    grid-area: i;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3em;
+    max-width: 30em;
+    align-self: center;
+
+    color: var(--clr-on-primary--200);
+
+    font-size: var(--fs-300);
+}
+
+.heading-badge {
+    grid-area: b;
+    display: none;
+
+    @media (min-width: $bp-tablet) {
+        display: flex;
+        justify-self: end;        
+    }
+
+    @media (min-width: $bp-monitor) {
+        transform: translate(-0.5rem, calc(15% + var(--margin-md)));
+    }
+}

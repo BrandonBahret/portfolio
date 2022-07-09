@@ -1,0 +1,14 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: clamp(0.5rem, 2vw, 5rem);
+    
+    @media (min-width: $bp-tablet) {
+        flex-direction: row;
+    }
+}
+
+.projects {
+    --col-gap: var(--margin-lg);
+}

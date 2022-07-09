@@ -1,0 +1,13 @@
+:root {
+    /*    webkit scrollbar    */
+    --scroll-width: 12px;
+    --scroll-track: var(--clr-logo-top);
+    --scroll-thumb: var(--clr-logo-bottom);
+
+    /*    margins    */
+    --margin: clamp(3rem, 4vw, 5rem);
+    --margin-lg: min(calc(var(--margin) * 1.3), 7rem);
+    --margin-md: min(calc(var(--margin) * 0.6), 2rem);
+    --margin-sm: min(calc(var(--margin) * 0.455), 1.25rem);
+    --margin-xs: min(calc(var(--margin) * 0.25), 0.68rem);
+}
