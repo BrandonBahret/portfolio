@@ -86,8 +86,8 @@ address {
     text-align: left;
 }
 
-// margin between section headings and segments
-.section-heading + .article-segment {
+// margin between headings and segments
+[class*="heading"] + .article-segment {
     margin-top: var(--section-heading-gap, 1.15rem);
 }
 
@@ -97,7 +97,8 @@ address {
 }
 
 // margin between segment titles and content
-.article-segment :is(h1, h2, h3, h4, h5, h6) + p {
+$elm-heading: "h1, h2, h3, h4, h5, h6, label";
+.article-segment :is(#{$elm-heading}) + p {
     margin-top: var(--segment-heading-gap, 0.5rem);
 }
 

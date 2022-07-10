@@ -6,10 +6,10 @@
 
     grid-template-columns: 1fr;
     @media (min-width: $bp-monitor) {
-        --side-heading-width: #{fs-fluid(10rem, 13rem, 1)};
+        --side-heading-width: #{fs-fluid(10rem, 13rem, 0.6)};
         grid-template-columns: var(--side-heading-width) 1fr;
 
-        .side-heading {
+        [class*="side-"] {
             grid-column: 1 / span 1;
         }
         
@@ -19,7 +19,7 @@
         }
     }
     @media (min-width: $bp-desktop) {
-        --side-heading-width: #{fs-fluid(10rem, 15rem, 0.6)};
+        --side-heading-width: #{fs-fluid(10rem, 13.5rem, 0.6)};
         grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
         // column-gap: var(--margin-lg);
     }

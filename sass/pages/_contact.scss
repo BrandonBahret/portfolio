@@ -1,0 +1,34 @@
+@media (min-width: $bp-tablet) {
+    .qna {
+        position: relative;
+        z-index: 0;
+    
+        --border-effect-top: 3.5rem;
+        --border-effect-right: 5.7rem;
+        margin: var(--border-effect-top) var(--border-effect-right) 0 0;
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    
+        max-width: 47rem;
+    }
+    .qna::before {
+        content: "";
+    
+        position: absolute;
+        z-index: -1;
+        inset: 0;
+    
+        background: var(--bg-body);
+    }
+    .qna::after {
+        content: "";
+    
+        position: absolute;
+        z-index: -2;
+        inset: calc(-1 * var(--border-effect-top)) calc(-1 * var(--border-effect-right)) 0 2rem;
+    
+        max-height: 25rem;
+    
+        background-image: url(/assets/images/vector-pattern.svg);
+        background-repeat: space;
+    }
+}

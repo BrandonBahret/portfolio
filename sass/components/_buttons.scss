@@ -1,5 +1,6 @@
 [class*="btn-"] {
     display: inline-block;
+    border: 0;
 
     font-size: var(--fs-100);
     font-variation-settings: 'wght' 610;
@@ -8,7 +9,7 @@
 }
 [class*="btn-"]:hover,
 [class*="btn-"]:focus {
-    filter: grayscale(0.2);
+    filter: grayscale(0.15);
 }
 
 
@@ -25,7 +26,7 @@
 .btn-flat:hover,
 .btn-flat:focus {
     box-shadow: var(--shadow-400);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 
