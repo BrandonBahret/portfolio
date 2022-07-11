@@ -6,12 +6,13 @@
   --clr-black: hsl(var(--hsl-black));
   --clr-dark: hsl(226, 44%, 14%);
   --clr-grey: hsl(226, 30%, 28%);
-  --clr-light-grey: hsl(210, 7%, 95%);
+  --clr-light-grey: hsl(226, 20%, 95%);
   --clr-white: hsl(224, 90%, 99%);
   --clr-soft-white: hsl(224, 10%, 91%);
   --clr-primary: hsl(224, 43%, 25%);
   --clr-accent: hsl(222, 71%, 56%);
-  --clr-neutral: hsl(201, 40%, 90%);
+  --clr-neutral: hsl(201, 40%, 89%);
+  --clr-subtle-neutral: hsl(240, 20%, 98%);
   --clr-on-primary--100: var(--clr-white);
   --clr-on-primary--200: var(--clr-soft-white);
   --clr-on-neutral--100: hsl(227 43% 10%);
@@ -65,15 +66,15 @@ html, body {
 
 :root {
   /*    font sizes    */
-  --fs-100: clamp(0.85rem, (0.85 * (1 - 1 * (var(--client-width) - 20) / 45) + 1 * (var(--client-width) - 20) / 45 * 1) * 1rem, 1rem);
-  --fs-200: clamp(1rem, (1 * (1 - 1 * (var(--client-width) - 20) / 45) + 1.088 * (var(--client-width) - 20) / 45 * 1) * 1rem, 1.088rem);
-  --fs-300: clamp(1rem, (1 * (1 - 0.4 * (var(--client-width) - 20) / 45) + 1.31 * (var(--client-width) - 20) / 45 * 0.4) * 1rem, 1.31rem);
-  --fs-400: clamp(1.31rem, (1.31 * (1 - 0.6 * (var(--client-width) - 20) / 45) + 1.578 * (var(--client-width) - 20) / 45 * 0.6) * 1rem, 1.578rem);
-  --fs-500: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 45) + 1.901 * (var(--client-width) - 20) / 45 * 1) * 1rem, 1.901rem);
-  --fs-600: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 45) + 2.289 * (var(--client-width) - 20) / 45 * 1) * 1rem, 2.289rem);
-  --fs-700: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 45) + 2.757 * (var(--client-width) - 20) / 45 * 1) * 1rem, 2.757rem);
-  --fs-800: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 45) + 3.321 * (var(--client-width) - 20) / 45 * 1) * 1rem, 3.321rem);
-  --fs-900: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 45) + 4 * (var(--client-width) - 20) / 45 * 1) * 1rem, 4rem);
+  --fs-100: clamp(0.85rem, (0.85 * (1 - 1 * (var(--client-width) - 20) / 43) + 1 * (var(--client-width) - 20) / 43 * 1) * 1rem, 1rem);
+  --fs-200: clamp(1rem, (1 * (1 - 1 * (var(--client-width) - 20) / 43) + 1.088 * (var(--client-width) - 20) / 43 * 1) * 1rem, 1.088rem);
+  --fs-300: clamp(1rem, (1 * (1 - 0.4 * (var(--client-width) - 20) / 43) + 1.31 * (var(--client-width) - 20) / 43 * 0.4) * 1rem, 1.31rem);
+  --fs-400: clamp(1.31rem, (1.31 * (1 - 0.6 * (var(--client-width) - 20) / 43) + 1.578 * (var(--client-width) - 20) / 43 * 0.6) * 1rem, 1.578rem);
+  --fs-500: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 43) + 1.901 * (var(--client-width) - 20) / 43 * 1) * 1rem, 1.901rem);
+  --fs-600: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 43) + 2.289 * (var(--client-width) - 20) / 43 * 1) * 1rem, 2.289rem);
+  --fs-700: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 43) + 2.757 * (var(--client-width) - 20) / 43 * 1) * 1rem, 2.757rem);
+  --fs-800: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 43) + 3.321 * (var(--client-width) - 20) / 43 * 1) * 1rem, 3.321rem);
+  --fs-900: clamp(1.578rem, (1.578 * (1 - 1 * (var(--client-width) - 20) / 43) + 4 * (var(--client-width) - 20) / 43 * 1) * 1rem, 4rem);
   /*    font families   */
   --ff-serif: "Yeseva One", serif;
   --ff-sans: "Nunito", sans-serif;
@@ -220,7 +221,7 @@ address {
   }
 }
 
-@media (max-width: 65rem) {
+@media (max-width: 63rem) {
   .monitor-and-up {
     display: none !important;
   }
@@ -354,7 +355,7 @@ address {
       -ms-flex-align: center;
           align-items: center;
   padding: var(--margin-sm) var(--margin-xs) var(--margin-xs);
-  max-width: clamp(11.5rem, (11.5 * (1 - 0.5 * (var(--client-width) - 20) / 45) + 16 * (var(--client-width) - 20) / 45 * 0.5) * 1rem, 16rem);
+  max-width: clamp(11.5rem, (11.5 * (1 - 0.5 * (var(--client-width) - 20) / 43) + 16 * (var(--client-width) - 20) / 43 * 0.5) * 1rem, 16rem);
   min-width: 11.5rem;
   aspect-ratio: 1/0.9;
   border-bottom: var(--clr-accent) solid 5px;
@@ -363,7 +364,7 @@ address {
   color: var(--clr-on-neutral--100);
   -webkit-box-shadow: var(--shadow-500);
           box-shadow: var(--shadow-500);
-  font-size: clamp(1rem, (1 * (1 - 0.5 * (var(--client-width) - 20) / 45) + 1.44 * (var(--client-width) - 20) / 45 * 0.5) * 1rem, 1.44rem);
+  font-size: clamp(1rem, (1 * (1 - 0.5 * (var(--client-width) - 20) / 43) + 1.44 * (var(--client-width) - 20) / 43 * 0.5) * 1rem, 1.44rem);
   text-align: center;
 }
 
@@ -382,9 +383,9 @@ address {
   row-gap: var(--row-gap, var(--margin-lg));
   grid-template-columns: 1fr;
 }
-@media (min-width: 65rem) {
+@media (min-width: 63rem) {
   .main-grid {
-    --side-heading-width: clamp(10rem, (10 * (1 - 0.6 * (var(--client-width) - 20) / 45) + 13 * (var(--client-width) - 20) / 45 * 0.6) * 1rem, 13rem);
+    --side-heading-width: clamp(10rem, (10 * (1 - 0.6 * (var(--client-width) - 20) / 43) + 13 * (var(--client-width) - 20) / 43 * 0.6) * 1rem, 13rem);
     grid-template-columns: var(--side-heading-width) 1fr;
   }
   .main-grid [class*=side-] {
@@ -397,7 +398,7 @@ address {
 }
 @media (min-width: 108rem) {
   .main-grid {
-    --side-heading-width: clamp(10rem, (10 * (1 - 0.6 * (var(--client-width) - 20) / 45) + 13.5 * (var(--client-width) - 20) / 45 * 0.6) * 1rem, 13.5rem);
+    --side-heading-width: clamp(10rem, (10 * (1 - 0.6 * (var(--client-width) - 20) / 43) + 13.5 * (var(--client-width) - 20) / 43 * 0.6) * 1rem, 13.5rem);
     grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
   }
 }
@@ -424,7 +425,7 @@ address {
     grid-template-areas: "l . w n n n n n" ". . a . . . . ." ". . . . . . . ." ". . . . . . . ." "i i i i i i . b";
   }
 }
-@media (min-width: 65rem) {
+@media (min-width: 63rem) {
   .heading-primary {
     margin-bottom: 4rem;
     grid-template-areas: "l . w n n n n n" ". . a . . . . ." ". . . . . . . ." ". . . . . . . ." ". . i i i i . b";
@@ -433,7 +434,7 @@ address {
 
 .logo-mark {
   grid-area: l;
-  width: clamp(2.289rem, (2.289 * (1 - 1 * (var(--client-width) - 20) / 45) + 2.757 * (var(--client-width) - 20) / 45 * 1) * 1rem, 2.757rem);
+  width: clamp(2.289rem, (2.289 * (1 - 1 * (var(--client-width) - 20) / 43) + 2.757 * (var(--client-width) - 20) / 43 * 1) * 1rem, 2.757rem);
 }
 
 .logo-wordmark {
@@ -447,7 +448,7 @@ address {
           flex-direction: column;
   align-self: center;
   font-variation-settings: "wght" 600;
-  font-size: clamp(1.2rem, (1.2 * (1 - 1 * (var(--client-width) - 20) / 45) + 1.4 * (var(--client-width) - 20) / 45 * 1) * 1rem, 1.4rem);
+  font-size: clamp(1.2rem, (1.2 * (1 - 1 * (var(--client-width) - 20) / 43) + 1.4 * (var(--client-width) - 20) / 43 * 1) * 1rem, 1.4rem);
   line-height: 125%;
   letter-spacing: 0.25px;
 }
@@ -455,7 +456,7 @@ address {
 .logo-anchor {
   grid-area: a;
   justify-self: end;
-  width: clamp(1.27rem, (1.27 * (1 - 1 * (var(--client-width) - 20) / 45) + 1.55 * (var(--client-width) - 20) / 45 * 1) * 1rem, 1.55rem);
+  width: clamp(1.27rem, (1.27 * (1 - 1 * (var(--client-width) - 20) / 43) + 1.55 * (var(--client-width) - 20) / 43 * 1) * 1rem, 1.55rem);
 }
 
 .primary-navigation {
@@ -495,7 +496,7 @@ address {
     justify-self: end;
   }
 }
-@media (min-width: 65rem) {
+@media (min-width: 63rem) {
   .heading-badge {
     -webkit-transform: translate(-0.5rem, calc(15% + var(--margin-md)));
             transform: translate(-0.5rem, calc(15% + var(--margin-md)));
@@ -717,7 +718,7 @@ address {
   font-family: var(--ff-display);
   font-size: var(--fs-400);
 }
-@media (max-width: 65rem) {
+@media (max-width: 63rem) {
   .side-heading {
     display: none !important;
   }
@@ -738,7 +739,6 @@ address {
 
 .section-heading {
   display: block;
-  margin-bottom: 1rem;
   color: var(--clr-grey);
   text-transform: lowercase;
   font-family: var(--ff-sans);
@@ -905,6 +905,101 @@ address {
   grid-area: a;
 }
 
+.accordion {
+  max-width: 55em;
+  font-family: var(--ff-sans);
+  font-size: var(--fs-300);
+}
+
+.accordion-item {
+  background-color: var(--clr-subtle-neutral);
+}
+.accordion-item .ai-hint {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 2px solid var(--clr-neutral);
+  border-radius: 4px;
+}
+.accordion-item .ai-hint:hover, .accordion-item .ai-hint:focus {
+  background-color: var(--clr-light-grey);
+}
+.accordion-item .ai-hint > p {
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-right: 2px solid var(--clr-neutral);
+}
+.accordion-item .ai-hint::after {
+  padding: 0.35rem;
+  display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 0;
+  content: url(/assets/images/arrow-up.svg);
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
+  transition: -webkit-transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out;
+  transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out;
+}
+.accordion-item .ai-reveal {
+  padding: 1rem;
+  border: 2px solid var(--clr-neutral);
+  -webkit-transition: padding-top 300ms ease-in;
+  transition: padding-top 300ms ease-in;
+}
+.accordion-item .ai-reveal > p {
+  max-width: 35rem;
+}
+
+.accordion-item[aria-expanded=true] .ai-hint {
+  border-radius: 4px 4px 0 0;
+  border-bottom: 0;
+  background-color: var(--clr-light-grey);
+}
+
+.accordion-item[aria-expanded=false] .ai-hint::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.accordion-item[aria-expanded=false] .ai-reveal {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+[class*=heading] + .accordion {
+  margin-top: var(--section-heading-gap, 1.15rem);
+  max-width: min(55em, 100%);
+}
+
+.accordion + .accordion {
+  margin-top: var(--accordion-gap, 3rem);
+}
+
+.accordion-item + .accordion-item {
+  margin-top: var(--item-gap, 0.7rem);
+}
+
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -949,14 +1044,14 @@ address {
   background-color: var(--clr-neutral);
 }
 
-@media (min-width: 39rem) {
+@media (min-width: 63rem) {
   .qna {
     position: relative;
     z-index: 0;
     --border-effect-top: 3.5rem;
     --border-effect-right: 5.7rem;
     margin: var(--border-effect-top) var(--border-effect-right) 0 0;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 1.5rem 1.5rem 0 0;
     max-width: 47rem;
   }
   .qna::before {
@@ -970,8 +1065,8 @@ address {
     content: "";
     position: absolute;
     z-index: -2;
-    inset: calc(-1 * var(--border-effect-top)) calc(-1 * var(--border-effect-right)) 0 2rem;
-    max-height: 25rem;
+    inset: calc(-1 * var(--border-effect-top)) calc(-1 * var(--border-effect-right)) var(--border-effect-top) 2rem;
+    max-height: 20rem;
     background-image: url(/assets/images/vector-pattern.svg);
     background-repeat: space;
   }

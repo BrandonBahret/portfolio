@@ -1,110 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>contact</title>
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="./scripts/css-helpers.js" defer></script>
-    </head>
-    <body>
-        <header class="heading-primary">
-            <img class="logo-mark" src="./assets/images/logo.svg" alt="">
-            <div class="logo-wordmark">
-                <p>Brandon</p>
-                <p>Bahret</p>
+    <title>contact</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./scripts/css-helpers.js" defer></script>
+    <script src="./scripts/accordion.js" defer></script>
+</head>
+<body>
+    <header class="heading-primary">
+        <img class="logo-mark" src="./assets/images/logo.svg" alt="">
+        <div class="logo-wordmark">
+            <p>Brandon</p>
+            <p>Bahret</p>
+        </div>
+        <img class="logo-anchor" src="./assets/images/logo-anchor.svg" alt="">
+
+        <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
+        <nav data-visible="false" data-animate="false" class="primary-navigation">
+            <ul>
+                <li><a aria-selected="false" href="index.html">Home</a></li>
+                <li><a aria-selected="false" href="index.html#portfolio">Portfolio</a></li>
+                <li><a aria-selected="false" href="process.html">Process</a></li>
+                <li><a aria-selected="true" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__desc">
+            <h1 class="header__title">Ready to start?</h1>
+            <p>Let's open a dialogue that'll establish the vision for your website. Send the first message today!</p>
+        </div>
+        
+        <div class="heading-badge">
+            <h3 class="heading-badge__title">Availability</h3>
+            <p><em>[Yes]</em> - I'm looking for new projects.</p>
+            <a class="btn-flat" href="contact.html#message">hire me</a>
+        </div>
+    </header>
+
+    <main class="container main-grid">
+        <div class="side-heading">
+            <h3 class="side-heading__title">questions?</h3>
+            <p>Questions you might have on mind...</p>
+        </div>
+
+        <section class="col qna" style="--col-gap: 0;">
+            <h2 class="section-heading"><span class="section__title uppercase">Q&A</span></h2>
+            
+            <div class="accordion">
+                <div aria-expanded="false" class="accordion-item">
+                    <div class="ai-hint" role="button"><p>What deliverables do you offer with your services?</p></div>
+                    <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit nulla eum vitae quae. Facere.</p></div>
+                </div>
+                <div aria-expanded="false" class="accordion-item">
+                    <div class="ai-hint" role="button"><p>What recurring fees should be expected?</p></div>
+                    <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p></div>
+                </div>
+                <div aria-expanded="false" class="accordion-item">
+                    <div class="ai-hint" role="button"><p>How do you set your prices?</p></div>
+                    <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p></div>
+                </div>
+                <div aria-expanded="false" class="accordion-item">
+                    <div class="ai-hint" role="button"><p>What are your terms of service?</p></div>
+                    <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p></div>
+                </div>
             </div>
-            <img class="logo-anchor" src="./assets/images/logo-anchor.svg" alt="">
+        </section>
 
-            <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
-            <nav data-visible="false" data-animate="false" class="primary-navigation">
-                <ul>
-                    <li><a aria-selected="false" href="index.html">Home</a></li>
-                    <li><a aria-selected="false" href="index.html#portfolio">Portfolio</a></li>
-                    <li><a aria-selected="false" href="process.html">Process</a></li>
-                    <li><a aria-selected="true" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="side-heading">
+            <h3 class="side-heading__title">ready?</h3>
+            <p>Schedule an interview, ask a question.</p>
+        </div>
 
-            <div class="header__desc">
-                <h1 class="header__title">Ready to start?</h1>
-                <p>Let's open a dialogue that'll establish the vision for your website. Send the first message today!</p>
+        <section id="#message" class="article-segment-group">
+            <h2 class="section-heading"><span class="section__title">Message me</span></h2>
+
+            <form class="col article-segment-group" action="/" method="post">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" autocomplete="on" placeholder="janedoe@gmail.com">
+
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" placeholder="your message">
+
+                <button class="btn-flat" type="submit">send message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__desc">
+                <h2 class="footer_title">I'll respond to you ASAP!</h2>
+                <p>Thank you for considering me for your web project.</p>
             </div>
             
-            <div class="heading-badge">
-                <h3 class="heading-badge__title">Availability</h3>
-                <p><em>[Yes]</em> - I'm looking for new projects.</p>
-                <a class="btn-flat" href="contact.html#message">hire me</a>
-            </div>
-        </header>
-
-        <main class="container main-grid">
-            <div class="side-heading">
-                <h3 class="side-heading__title">questions?</h3>
-                <p>Questions you might have on mind...</p>
-            </div>
-
-            <section class="col qna article-segment-group">
-                <h2 class="section-heading"><span class="section__title uppercase">Q&A</span></h2>
-                
-                <div class="article-segment accordian">
-                    <div class="accordian-item article-segment">
-                        <p class="ai-hint">What deliverables do you offer with your services?</p>
-                        <p class="ai-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit nulla eum vitae quae. Facere.</p>
-                    </div>
-                    <div class="accordian-item article-segment">
-                        <p class="ai-hint">What recurring fees should be expected?</p>
-                        <p class="ai-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p>
-                    </div>
-                    <div class="accordian-item article-segment">
-                        <p class="ai-hint">How do you set your prices?</p>
-                        <p class="ai-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p>
-                    </div>
-                    <div class="accordian-item article-segment">
-                        <p class="ai-hint">What are your terms of service?</p>
-                        <p class="ai-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p>
-                    </div>
-                </div>
-            </section>
-
-            <div class="side-heading">
-                <h3 class="side-heading__title">ready?</h3>
-                <p>Schedule an interview, ask a question.</p>
-            </div>
-
-            <section id="#message" class="article-segment-group">
-                <h2 class="section-heading"><span class="section__title">Message me</span></h2>
-
-                <form class="col article-segment-group" action="/" method="post">
-                    <label for="email">Email Address</label>
-                    <input type="text" id="email" name="email" autocomplete="on" placeholder="janedoe@gmail.com">
-
-                    <label for="message">Message</label>
-                    <input type="text" id="message" name="message" placeholder="your message">
-
-                    <button class="btn-flat" type="submit">send message</button>
-                </form>
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="footer">
-                <div class="footer__desc">
-                    <h2 class="footer_title">I'll respond to you ASAP!</h2>
-                    <p>Thank you for considering me for your web project.</p>
-                </div>
-                
-                <div class="watermark"><img src="./assets/images/logo-watermark.svg" alt="" draggable="false"></div>
-            </div>
-            <div class="subfooter">
-                <p>© 2022 Brandon Bahret</p>
-                <span class="subfooter__links">
-                    <a href="terms.html">service terms</a>
-                </span>
-            </div>
-        </footer>
-    </body>
+            <div class="watermark"><img src="./assets/images/logo-watermark.svg" alt="" draggable="false"></div>
+        </div>
+        <div class="subfooter">
+            <p>© 2022 Brandon Bahret</p>
+            <span class="subfooter__links">
+                <a href="terms.html">service terms</a>
+            </span>
+        </div>
+    </footer>
+</body>
 </html>

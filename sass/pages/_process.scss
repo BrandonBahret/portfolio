@@ -8,12 +8,11 @@
     transform: translateY(-25%);
 
     display: grid;
-    // display: none;
     place-items: center;
 
     min-width: 4rem;
     aspect-ratio: 1;
-
+    
     border-radius: 50%;
 
     background-color: var(--clr-neutral);
