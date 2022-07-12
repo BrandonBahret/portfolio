@@ -38,7 +38,7 @@
     .ai-reveal {
         @include bg-neutral;
         padding: 1rem;
-        // border: 2px solid var(--clr-neutral);
+        border-radius: 0 0 4px 4px;
     }
     .ai-reveal > p {
         max-width: 35rem;

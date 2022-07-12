@@ -1018,6 +1018,7 @@ address {
   border-radius: 4px;
   background-color: var(--clr-subtle-neutral);
   padding: 1rem;
+  border-radius: 0 0 4px 4px;
 }
 .accordion-item .ai-reveal > p {
   max-width: 35rem;
