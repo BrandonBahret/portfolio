@@ -54,6 +54,10 @@ body {
 .indent {
     text-indent: var(--indent, 1rem);
 }
+ul[class~="indent"] {
+    text-indent: initial;
+    margin-left: var(--indent, 1rem);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--ff-display);
@@ -81,6 +85,9 @@ address {
     text-align: justify;
     text-align-last: left;
     hyphens: auto;
+}
+.article-segment em {
+    font-weight: 600;
 }
 .article-segment :is(h1, h2, h3, h4, h5, h6) {
     text-align: left;
