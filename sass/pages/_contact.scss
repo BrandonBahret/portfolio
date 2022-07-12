@@ -3,7 +3,6 @@
     --form-heading-gap: 1.15rem;
     --form-label-gap: 0.5rem;
 
-
     display: flex;
     flex-direction: column;
     gap: var(--form-group-gap);
@@ -67,8 +66,8 @@ textarea, input, .pseudo-form-element {
         position: relative;
         z-index: 0;
     
-        --border-effect-top: 3.5rem;
-        --border-effect-right: 5.7rem;
+        --border-effect-top: 2.75rem;
+        --border-effect-right: 5.0rem;
         margin: var(--border-effect-top) var(--border-effect-right) 0 0;
         padding: 1.5rem 1.5rem 0 0;
     
