@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+    
     <title>contact</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./scripts/css-helpers.js" defer></script>
@@ -37,7 +38,7 @@
         <div class="heading-badge">
             <h3 class="heading-badge__title">Availability</h3>
             <p><em>[Yes]</em> - I'm looking for new projects.</p>
-            <a class="btn-flat" href="contact.html#message">hire me</a>
+            <a class="btn-flat" href="contact.html#form">hire me</a>
         </div>
     </header>
 
@@ -52,6 +53,10 @@
             
             <div class="accordion">
                 <div aria-expanded="false" class="accordion-item">
+                    <div class="ai-hint" role="button"><p>What are your terms of service?</p></div>
+                    <div class="ai-reveal"><p>The terms that will apply to our project are found <a href="terms.html">here</a>.</p></div>
+                </div>
+                <div aria-expanded="false" class="accordion-item">
                     <div class="ai-hint" role="button"><p>What deliverables do you offer with your services?</p></div>
                     <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum velit nulla eum vitae quae. Facere.</p></div>
                 </div>
@@ -63,29 +68,39 @@
                     <div class="ai-hint" role="button"><p>How do you set your prices?</p></div>
                     <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p></div>
                 </div>
-                <div aria-expanded="false" class="accordion-item">
-                    <div class="ai-hint" role="button"><p>What are your terms of service?</p></div>
-                    <div class="ai-reveal"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quis assumenda officiis eveniet non voluptatum!</p></div>
-                </div>
             </div>
         </section>
 
         <div class="side-heading">
             <h3 class="side-heading__title">ready?</h3>
-            <p>Schedule an interview, ask a question.</p>
+            <p>Schedule an interview, ask a question...</p>
         </div>
 
-        <section id="#message" class="article-segment-group">
-            <h2 class="section-heading"><span class="section__title">Message me</span></h2>
+        <section id="form" class="article-segment-group">
+            <h2 class="section-heading"><span class="section__title">Contact</span></h2>
 
-            <form class="col article-segment-group" action="/" method="post">
-                <label for="email">Email Address</label>
-                <input type="text" id="email" name="email" autocomplete="on" placeholder="janedoe@gmail.com">
+            <form class="col form article-segment-group" action="https://formsubmit.co/e4d8df7b53ce4a01435235ea85ab18c0" method="POST">
+                <input type="hidden" name="_subject" value="Web Development Inquiry">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/contact.html">
+                <input type="text" name="_honey" style="display:none">
 
-                <label for="message">Message</label>
-                <input type="text" id="message" name="message" placeholder="your message">
+                <div class="responsive-row">
+                    <div class="form-group inline-label">
+                        <label for="email">From: </label>
+                        <input type="text" id="email" name="email" autocomplete="on" placeholder="janedoe@gmail.com">
+                    </div>
+                    <div class="form-group inline-label">
+                        <label>To: </label>
+                        <div class="pseudo-form-element"><a href="mailto:brandonbahret@gmail.com">brandonbahret@gmail.com</a></div>
+                    </div>
+                </div>
 
-                <button class="btn-flat" type="submit">send message</button>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea type="text" id="message" name="message" placeholder="Hello, my name is..." rows="6"></textarea>
+                    <button class="btn-flat" type="submit">send message</button>
+                </div>
             </form>
         </section>
 

@@ -14,3 +14,8 @@
     border-radius: 100vmax;
     background-color: var(--scroll-thumb);
 }
+
+::-webkit-scrollbar-corner {
+    background-color: var(--scroll-track);
+    border: 0;
+}

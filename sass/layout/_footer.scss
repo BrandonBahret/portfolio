@@ -1,4 +1,6 @@
 .footer {
+    --clr-focus: var(--clr-on-primary--100);
+
     display: grid;
     box-sizing: content-box;
     
@@ -68,6 +70,8 @@
 }
 
 .subfooter {
+    --clr-focus: var(--clr-on-primary--100);
+    
     display: flex;
     justify-content: space-between;
     padding: 0.75rem var(--margin-md);

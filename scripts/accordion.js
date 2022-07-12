@@ -12,7 +12,7 @@ accordions.forEach(accordion => {
     items.forEach(item => {
         let aiHint = item.querySelector(".ai-hint");
 
-        aiHint.tabIndex = 1;
+        aiHint.tabIndex = 0;
         aiHint.addEventListener("keydown", e => {
             if (e.code === "Enter" || e.code === "Space") {
                 e.preventDefault();

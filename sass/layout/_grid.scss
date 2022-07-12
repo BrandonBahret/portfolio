@@ -1,6 +1,6 @@
 .main-grid {
     display: grid;
-    padding-block: var(--margin) calc(var(--margin) * 2.5);
+    padding-block: var(--margin) calc(var(--margin) * 2);
     row-gap: var(--row-gap, var(--margin-lg));
     // column-gap: var(--margin);
 

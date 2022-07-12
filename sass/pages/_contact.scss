@@ -1,3 +1,67 @@
+.form {
+    --form-group-gap: 1.5rem;
+    --form-heading-gap: 1.15rem;
+    --form-label-gap: 0.5rem;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--form-group-gap);
+}
+
+[class*="heading"] + .form {
+    margin-top: var(--form-heading-gap);
+}
+
+.form .responsive-row {
+    --row-gap: var(--form-group-gap);
+    --col-gap: var(--form-group-gap);
+}
+
+.form-group {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--form-label-gap);
+    flex-grow: 1;
+
+    font-family: var(--ff-sans);
+    font-size: 1rem;
+
+    label {
+        font-size: var(--fs-300);
+        font-family: var(--ff-display);
+    }
+}
+
+.form-group[class*="inline-label"] {
+    flex-direction: row;
+    gap: 0.75rem;
+    
+    label {
+        align-self: center;
+    }
+
+    @media (max-width: $bp-monitor) {
+        label {
+            width: 3rem;
+            text-align: end;
+        }
+    }
+}
+
+textarea, input, .pseudo-form-element {
+    @include bg-neutral;
+
+    flex-grow: 1;
+    resize: vertical;
+    padding: 0.75rem 1rem;
+
+    font-family: inherit;
+    font-size: inherit;
+}
+
 @media (min-width: $bp-monitor) {
     .qna {
         position: relative;
@@ -26,7 +90,7 @@
         z-index: -2;
         inset: calc(-1 * var(--border-effect-top)) calc(-1 * var(--border-effect-right)) var(--border-effect-top) 2rem;
     
-        max-height: 20rem;
+        height: 20rem;
     
         background-image: url(/assets/images/vector-pattern.svg);
         background-repeat: space;
