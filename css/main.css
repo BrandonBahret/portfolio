@@ -304,6 +304,11 @@ address {
 }
 
 .bg-error {
+  border: 16px solid var(--clr-error);
+  border-radius: 4px;
+}
+
+.bg-error:empty {
   border: 2px solid var(--clr-error);
   border-radius: 4px;
 }
@@ -738,7 +743,7 @@ address {
 }
 
 .btn-flat:hover,
-.btn-flat:focus {
+.btn-flat:focus-visible {
   -webkit-box-shadow: var(--shadow-400);
           box-shadow: var(--shadow-400);
   -webkit-transform: scale(1.05);

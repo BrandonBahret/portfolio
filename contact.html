@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="./scripts/css-helpers.js" defer></script>
     <script src="./scripts/accordion.js" defer></script>
+    <script src="./scripts/contact-form.js" defer></script>
 </head>
 <body>
     <header class="heading-primary">
@@ -103,7 +104,7 @@
         <section id="form" class="article-segment-group">
             <h2 class="section-heading"><span class="section__title">Contact</span></h2>
 
-            <form class="col form article-segment-group" action="https://formsubmit.co/e4d8df7b53ce4a01435235ea85ab18c0" method="POST">
+            <form id="contact-form" class="col form article-segment-group" action="https://formsubmit.co/e4d8df7b53ce4a01435235ea85ab18c0" method="POST">
                 <input type="hidden" name="_subject" value="Web Development Inquiry">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
@@ -121,8 +122,13 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="_subject">Subject:</label>
+                    <input type="input" name="_subject" value="We'd like to hire you." placeholder="We would like...">
+                </div>
+
+                <div class="form-group">
                     <label for="message">Message:</label>
-                    <textarea type="text" id="message" name="message" placeholder="Hello, my name is..." rows="6"></textarea>
+                    <textarea type="text" id="message" name="message" placeholder="Hello, my name is..." rows="8"></textarea>
                     <button class="btn-flat" type="submit">send message</button>
                 </div>
             </form>

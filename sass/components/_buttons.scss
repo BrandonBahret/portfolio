@@ -24,7 +24,7 @@
     transition: transform 250ms ease, box-shadow 300ms ease;
 }
 .btn-flat:hover,
-.btn-flat:focus {
+.btn-flat:focus-visible {
     box-shadow: var(--shadow-400);
     transform: scale(1.05);
 }

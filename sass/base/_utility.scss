@@ -87,6 +87,10 @@
 }
 
 .bg-error {
+    border: 16px solid var(--clr-error);
+    border-radius: 4px;
+}
+.bg-error:empty {
     border: 2px solid var(--clr-error);
     border-radius: 4px;
 }
