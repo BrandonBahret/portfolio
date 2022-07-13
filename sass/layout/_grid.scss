@@ -5,7 +5,7 @@
     // column-gap: var(--margin);
 
     section {
-        margin-inline: auto;
+        // margin-inline: auto;
         width: 100%;
     }
 
@@ -21,13 +21,17 @@
         section {
             grid-column: 2 / span 1;
             width: initial;
-            margin-inline: var(--margin-lg) var(--margin-lg);
+            margin-inline: var(--margin) var(--margin);
         }
     }
 
     @media (min-width: $bp-desktop) {
         --side-heading-width: #{fs-fluid(10rem, 13.5rem, 0.6)};
-        grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
-        // column-gap: var(--margin-lg);
+        // grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
+        grid-template-columns: var(--side-heading-width) 1fr;
+        
+        section {
+            margin-inline: var(--margin-lg) var(--margin-lg);
+        }
     }
 }

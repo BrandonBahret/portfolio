@@ -1,6 +1,7 @@
 .services {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
     gap: clamp(0.5rem, 2vw, 5rem);
     
@@ -11,4 +12,16 @@
 
 .projects {
     --col-gap: var(--margin-lg);
+
+    align-items: center;
+}
+
+@media (min-width: $bp-monitor) {
+    .services {
+        justify-content: flex-start;
+    }
+
+    .projects {
+        align-items: flex-start;
+    }
 }
