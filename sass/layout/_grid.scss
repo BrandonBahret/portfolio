@@ -6,6 +6,7 @@
 
     section {
         margin-inline: auto;
+        width: 100%;
     }
 
     grid-template-columns: 1fr;
@@ -19,7 +20,8 @@
         
         section {
             grid-column: 2 / span 1;
-            margin-inline: var(--margin-lg) var(--margin-sm);
+            width: initial;
+            margin-inline: var(--margin-lg) var(--margin-lg);
         }
     }
 
