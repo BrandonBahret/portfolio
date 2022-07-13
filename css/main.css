@@ -14,6 +14,7 @@
   --clr-neutral: hsl(201, 40%, 89%);
   --clr-subtle-neutral: hsl(240, 20%, 98%);
   --clr-focus: hsl(222, 71%, 56%);
+  --clr-error: hsl(0, 71%, 56%);
   --clr-on-primary--100: var(--clr-white);
   --clr-on-primary--200: var(--clr-soft-white);
   --clr-on-neutral--100: hsl(227 43% 10%);
@@ -195,6 +196,7 @@ address {
 
 .container {
   max-width: max(65rem, 85vw);
+  min-height: 60vh;
   margin-inline: auto;
   padding-inline: var(--margin);
 }
@@ -299,6 +301,11 @@ address {
   .monitor-and-up {
     display: none !important;
   }
+}
+
+.bg-error {
+  border: 2px solid var(--clr-error);
+  border-radius: 4px;
 }
 
 .menu-toggle {

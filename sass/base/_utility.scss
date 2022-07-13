@@ -1,5 +1,6 @@
 .container {
     max-width: max(65rem, 85vw);
+    min-height: 60vh;
     margin-inline: auto;
     padding-inline: var(--margin);
 }
@@ -81,6 +82,11 @@
 @mixin bg-neutral {
     border: 2px solid var(--clr-neutral);
     border-radius: 4px;
-
+    
     background-color: var(--clr-subtle-neutral);
+}
+
+.bg-error {
+    border: 2px solid var(--clr-error);
+    border-radius: 4px;
 }
