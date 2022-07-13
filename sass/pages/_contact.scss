@@ -1,5 +1,5 @@
 .form {
-    --form-group-gap: 1.5rem;
+    --form-group-gap: clamp(1rem, 1vw, 1.5rem);
     --form-heading-gap: 1.15rem;
     --form-label-gap: 0.5rem;
 
@@ -40,10 +40,8 @@
     
     label {
         align-self: center;
-    }
 
-    @media (max-width: $bp-monitor) {
-        label {
+        @media (max-width: $bp-tablet) {
             width: 3rem;
             text-align: end;
         }

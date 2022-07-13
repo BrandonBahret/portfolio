@@ -217,7 +217,7 @@ address {
           flex-direction: column;
   gap: var(--col-gap, 1rem);
 }
-@media (min-width: 63rem) {
+@media (min-width: 41rem) {
   .responsive-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -240,7 +240,7 @@ address {
           flex-direction: column;
   gap: var(--col-gap, 1rem);
 }
-@media (min-width: 39rem) and (max-width: 63rem) {
+@media (min-width: 41rem) and (max-width: 63rem) {
   .responsive-col {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -269,13 +269,13 @@ address {
   clip: rect(0, 0, 0, 0);
 }
 
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .phone-only {
     display: none !important;
   }
 }
 
-@media (max-width: 39rem) {
+@media (max-width: 41rem) {
   .tablet-and-up {
     display: none !important;
   }
@@ -334,7 +334,7 @@ address {
   color: var(--clr-on-primary--100);
 }
 
-@media (max-width: 39rem) {
+@media (max-width: 41rem) {
   .menu-toggle {
     position: absolute;
     top: 1.5rem;
@@ -475,7 +475,7 @@ address {
   grid-template-rows: min-content min-content 2rem 1fr;
   grid-template-areas: "l . w n" ". . a ." ". . . ." "i i i i";
 }
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .heading-primary {
     margin-bottom: 2rem;
     grid-template-columns: -webkit-max-content 1em -webkit-min-content repeat(3, 1fr) 7% 2fr;
@@ -549,7 +549,7 @@ address {
   grid-area: b;
   display: none;
 }
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .heading-badge {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -582,7 +582,7 @@ address {
   background-color: var(--bg-grad-start);
   background-image: var(--bg-grad);
 }
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .footer {
     -webkit-clip-path: polygon(0px 0px, 100% 9%, 100% 101%, 0px 101%);
             clip-path: polygon(0px 0px, 100% 9%, 100% 101%, 0px 101%);
@@ -621,7 +621,7 @@ address {
   grid-area: w;
   display: none;
 }
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .watermark {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -880,7 +880,7 @@ address {
   color: var(--clr-on-primary--200);
 }
 
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .service-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -939,7 +939,7 @@ address {
   margin-inline: auto;
   grid-template-areas: "i" "d" "a";
 }
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .project-card {
     max-width: 50rem;
     margin-inline: 0;
@@ -1076,7 +1076,7 @@ address {
           flex-grow: 1;
   gap: clamp(0.5rem, 2vw, 5rem);
 }
-@media (min-width: 39rem) {
+@media (min-width: 41rem) {
   .services {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1108,7 +1108,7 @@ address {
 }
 
 .form {
-  --form-group-gap: 1.5rem;
+  --form-group-gap: clamp(1rem, 1vw, 1.5rem);
   --form-heading-gap: 1.15rem;
   --form-label-gap: 0.5rem;
   display: -webkit-box;
@@ -1162,7 +1162,7 @@ address {
   -ms-flex-item-align: center;
       align-self: center;
 }
-@media (max-width: 63rem) {
+@media (max-width: 41rem) {
   .form-group[class*=inline-label] label {
     width: 3rem;
     text-align: end;

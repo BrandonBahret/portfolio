@@ -25,7 +25,7 @@
 @mixin responsive-row {
     @include col;
 
-    @media (min-width: $bp-monitor) {
+    @media (min-width: $bp-tablet) {
         @include row;
     }
 }
