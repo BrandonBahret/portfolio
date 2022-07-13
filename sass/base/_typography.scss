@@ -50,6 +50,14 @@ body {
 .capitalize {
     text-transform: capitalize;
 }
+.text-align-left {
+    text-align: left;
+    hyphens: manual;
+}
+.text-align-justify {
+    text-align: justify;
+    hyphens: auto;
+}
 
 .indent {
     text-indent: var(--indent, 1rem);

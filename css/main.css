@@ -117,6 +117,20 @@ body {
   text-transform: capitalize;
 }
 
+.text-align-left {
+  text-align: left;
+  -webkit-hyphens: manual;
+      -ms-hyphens: manual;
+          hyphens: manual;
+}
+
+.text-align-justify {
+  text-align: justify;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
 .indent {
   text-indent: var(--indent, 1rem);
 }
