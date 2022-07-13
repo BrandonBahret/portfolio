@@ -4,6 +4,10 @@
     row-gap: var(--row-gap, var(--margin-lg));
     // column-gap: var(--margin);
 
+    section {
+        margin-inline: auto;
+    }
+
     grid-template-columns: 1fr;
     @media (min-width: $bp-monitor) {
         --side-heading-width: #{fs-fluid(10rem, 13rem, 0.6)};
@@ -15,9 +19,10 @@
         
         section {
             grid-column: 2 / span 1;
-            margin-inline: var(--margin-lg);
+            margin-inline: var(--margin-lg) var(--margin-sm);
         }
     }
+
     @media (min-width: $bp-desktop) {
         --side-heading-width: #{fs-fluid(10rem, 13.5rem, 0.6)};
         grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
