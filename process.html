@@ -11,6 +11,8 @@
     <script src="./scripts/css-helpers.js" defer></script>
 </head>
 <body>
+    <a class="content-skip" href="#main">skip to main content</a>
+
     <header class="heading-primary">
         <img class="logo-mark" src="./assets/images/logo.svg" alt="">
         <div class="logo-wordmark">
@@ -41,9 +43,9 @@
         </div>
     </header>
 
-    <main class="container main-grid">
+    <main id="main" class="container main-grid">
         <section class="introduction article-segment-group">
-            <h2 class="section-heading">
+            <h2 class="section-heading" tabindex="0">
                 <span class="section__title">Introduction</span> - Before we get started
             </h2>
             <p class="article-segment">
@@ -61,7 +63,7 @@
         </div>
 
         <section class="col article-segment-group" id="design" style="--section-heading-gap: 2.15rem">
-            <h2 class="section-heading">
+            <h2 class="section-heading" tabindex="0">
                 <span class="section__title">Design</span> - The start of all great things
             </h2>
 
@@ -105,7 +107,7 @@
         </div>
 
         <section class="col article-segment-group" id="develop" style="--section-heading-gap: 2.15rem">
-            <h2 class="section-heading">
+            <h2 class="section-heading" tabindex="0">
                 <span class="section__title">Development</span> - Where the value of design is realized
             </h2>
 
@@ -134,7 +136,7 @@
         </div>
 
         <section class="col article-segment-group" id="deploy" style="--section-heading-gap: 2.15rem">
-            <h2 class="section-heading">
+            <h2 class="section-heading" tabindex="0">
                 <span class="section__title">Deployment</span> - Finding a home
             </h2>
 

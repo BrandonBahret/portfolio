@@ -1,0 +1,25 @@
+.content-skip {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%) translateY(-101%);
+    z-index: 9999;
+
+    display: grid;
+    place-items: center;
+
+    padding: 1.5rem;
+    width: max-content;
+    background-color: var(--bg-card);
+    border: 2px solid var(--clr-accent);
+
+    font-size: 1.2rem;
+
+    transition: transform 350ms cubic-bezier(0.86,-0.51, 0, 1.29); 
+}
+
+.content-skip:focus-visible {
+    transform: translateX(50%) translateY(0);
+    outline: 0;
+}
+
