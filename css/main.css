@@ -298,25 +298,20 @@ address {
   }
 }
 
-@media (max-width: 41rem) {
+@media (max-width: 655px) {
   .tablet-and-up {
     display: none !important;
   }
 }
 
-@media (max-width: 63rem) {
+@media (max-width: 1007px) {
   .monitor-and-up {
     display: none !important;
   }
 }
 
 .bg-error {
-  border: 16px solid var(--clr-error);
-  border-radius: 4px;
-}
-
-.bg-error:empty {
-  border: 2px solid var(--clr-error);
+  border: 3px solid var(--clr-error);
   border-radius: 4px;
 }
 
@@ -826,7 +821,7 @@ address {
   font-family: var(--ff-display);
   font-size: var(--fs-400);
 }
-@media (max-width: 63rem) {
+@media (max-width: 1007px) {
   .side-heading {
     display: none !important;
   }

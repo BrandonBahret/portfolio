@@ -50,7 +50,6 @@
     display: inline-block;
 }
 
-
 .sr-only {
     position: absolute; 
 
@@ -71,12 +70,12 @@
     }
 }
 @mixin tablet-and-up {
-    @media (max-width: $bp-tablet) {
+    @media (max-width: 655px) {
         display: none !important;
     }
 }
-@mixin monitor-and-up {
-    @media (max-width: $bp-monitor) {
+@mixin monitor-and-up {    
+    @media (max-width: 1007px) {
         display: none !important;
     }
 }
@@ -92,10 +91,6 @@
 }
 
 .bg-error {
-    border: 16px solid var(--clr-error);
-    border-radius: 4px;
-}
-.bg-error:empty {
-    border: 2px solid var(--clr-error);
+    border: 3px solid var(--clr-error);
     border-radius: 4px;
 }
