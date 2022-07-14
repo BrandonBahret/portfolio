@@ -2,7 +2,11 @@
     max-width: max(65rem, 85vw);
     min-height: 60vh;
     margin-inline: auto;
-    padding-inline: var(--margin);
+    padding-inline: var(--margin-md);
+
+    @media (min-width: $bp-tablet) {
+        padding-inline: var(--margin);
+    }
 }
 // .container {
 //     max-width: 100%;
@@ -25,6 +29,7 @@
 
 @mixin responsive-row {
     @include col;
+    align-content: center;
 
     @media (min-width: $bp-tablet) {
         @include row;
