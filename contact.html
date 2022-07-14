@@ -45,98 +45,100 @@
         </div>
     </header>
 
-    <main id="main" class="container main-grid">
-        <div class="side-heading">
-            <h3 class="side-heading__title">questions?</h3>
-            <p>Questions you might have on mind...</p>
-        </div>
-
-        <section class="col qna" style="--col-gap: 0;">
-            <h2 class="section-heading"><span class="section__title uppercase">Q&A</span></h2>
-            
-            <div class="accordion">
-                <div aria-expanded="false" class="accordion-item">
-                    <div class="ai-hint" role="button"><p>What are your terms of service?</p></div>
-                    <div class="ai-reveal"><p>The terms that will apply to our project are found <a href="terms.html">here</a>.</p></div>
-                </div>
-
-                <div aria-expanded="false" class="accordion-item">
-                    <div class="ai-hint" role="button"><p>What deliverables do you offer with your services?</p></div>
-                    <div class="ai-reveal">
-                        <ul class="indent" style="--indent: 2rem;">
-                            <li>website deployment & setup</li>
-                            <li>instructions for maintaining the site</li>
-                            <li>project source files and media assets</li>
-                            <li>original design files</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div aria-expanded="false" class="accordion-item">
-                    <div class="ai-hint" role="button"><p>What recurring fees should be expected?</p></div>
-                    <div class="ai-reveal">
-                        <div class="article-segment">
-                            <p>Web design and development services requires a one-time fee; however, every site requires a recurring variable budget for things like hosting, domain registration, security certificates.</p>
-
-                            <p>These annual fees are not determined by me, and instead determined by the selected vendors. As such, estimates are a case-by-case basis.</p>
-
-                            <p>Expect annual fees to be <em>at least $50/year</em>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div aria-expanded="false" class="accordion-item">
-                    <div class="ai-hint" role="button"><p>How do you set your prices?</p></div>
-                    <div class="ai-reveal">
-                        <div class="article-segment">
-                            <p>Per project; never per hour. Hourly jobs leave everyone stressed. You wouldn't want to pay more for a project because it's taking longer than anticipated, so don't! You're paying for software, not the development time that goes into it.</p>
-                            
-                            <p><em>most projects: $100</em></p>
-                        </div>
-                    </div>
-                </div>
+    <main id="main" class="main-content">
+        <div class="container main-grid">
+            <div class="side-heading">
+                <h3 class="side-heading__title">questions?</h3>
+                <p>Questions you might have on mind...</p>
             </div>
-        </section>
-
-        <div class="side-heading">
-            <h3 class="side-heading__title">ready?</h3>
-            <p>Schedule an interview, ask a question...</p>
+    
+            <section class="col qna" style="--col-gap: 0;">
+                <h2 class="section-heading"><span class="section__title uppercase">Q&A</span></h2>
+                
+                <div class="accordion">
+                    <div aria-expanded="false" class="accordion-item">
+                        <div class="ai-hint" role="button"><p>What are your terms of service?</p></div>
+                        <div class="ai-reveal"><p>The terms that will apply to our project are found <a href="terms.html">here</a>.</p></div>
+                    </div>
+    
+                    <div aria-expanded="false" class="accordion-item">
+                        <div class="ai-hint" role="button"><p>What deliverables do you offer with your services?</p></div>
+                        <div class="ai-reveal">
+                            <ul class="indent" style="--indent: 2rem;">
+                                <li>website deployment & setup</li>
+                                <li>instructions for maintaining the site</li>
+                                <li>project source files and media assets</li>
+                                <li>original design files</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div aria-expanded="false" class="accordion-item">
+                        <div class="ai-hint" role="button"><p>What recurring fees should be expected?</p></div>
+                        <div class="ai-reveal">
+                            <div class="article-segment">
+                                <p>Web design and development services requires a one-time fee; however, every site requires a recurring variable budget for things like hosting, domain registration, security certificates.</p>
+    
+                                <p>These annual fees are not determined by me, and instead determined by the selected vendors. As such, estimates are a case-by-case basis.</p>
+    
+                                <p>Expect annual fees to be <em>at least $50/year</em>.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div aria-expanded="false" class="accordion-item">
+                        <div class="ai-hint" role="button"><p>How do you set your prices?</p></div>
+                        <div class="ai-reveal">
+                            <div class="article-segment">
+                                <p>Per project; never per hour. Hourly jobs leave everyone stressed. You wouldn't want to pay more for a project because it's taking longer than anticipated, so don't! You're paying for software, not the development time that goes into it.</p>
+                                
+                                <p><em>most projects: $100</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="side-heading">
+                <h3 class="side-heading__title">ready?</h3>
+                <p>Schedule an interview, ask a question...</p>
+            </div>
+    
+            <section id="form" class="article-segment-group">
+                <h2 class="section-heading"><span class="section__title">Contact</span></h2>
+    
+                <form id="contact-form" class="col form article-segment-group" action="https://formsubmit.co/e4d8df7b53ce4a01435235ea85ab18c0" method="POST">
+                    <input type="hidden" name="_subject" value="Web Development Inquiry">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="text" name="_honey" style="display:none">
+    
+                    <div class="responsive-row">
+                        <div class="form-group inline-label">
+                            <label for="email">From: </label>
+                            <input type="email" id="email" name="email" autocomplete="on" placeholder="janedoe@gmail.com">
+                        </div>
+                        <div class="form-group inline-label">
+                            <label>To: </label>
+                            <div class="pseudo-form-element"><a href="mailto:brandonbahret@gmail.com" target="_blank">brandonbahret@gmail.com</a></div>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="_subject">Subject:</label>
+                        <input type="input" name="_subject" value="We'd like to hire you." placeholder="We would like...">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea type="text" id="message" name="message" placeholder="Hello, my name is..." rows="8"></textarea>
+                        <button class="btn-flat" type="submit">send message</button>
+                    </div>
+                </form>
+            </section>
+            
         </div>
-
-        <section id="form" class="article-segment-group">
-            <h2 class="section-heading"><span class="section__title">Contact</span></h2>
-
-            <form id="contact-form" class="col form article-segment-group" action="https://formsubmit.co/e4d8df7b53ce4a01435235ea85ab18c0" method="POST">
-                <input type="hidden" name="_subject" value="Web Development Inquiry">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="http://127.0.0.1:5501/thankyou.html">
-                <input type="hidden" name="_template" value="box">
-                <input type="text" name="_honey" style="display:none">
-
-                <div class="responsive-row">
-                    <div class="form-group inline-label">
-                        <label for="email">From: </label>
-                        <input type="email" id="email" name="email" autocomplete="on" placeholder="janedoe@gmail.com">
-                    </div>
-                    <div class="form-group inline-label">
-                        <label>To: </label>
-                        <div class="pseudo-form-element"><a href="mailto:brandonbahret@gmail.com" target="_blank">brandonbahret@gmail.com</a></div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="_subject">Subject:</label>
-                    <input type="input" name="_subject" value="We'd like to hire you." placeholder="We would like...">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea type="text" id="message" name="message" placeholder="Hello, my name is..." rows="8"></textarea>
-                    <button class="btn-flat" type="submit">send message</button>
-                </div>
-            </form>
-        </section>
-
     </main>
 
     <footer>
