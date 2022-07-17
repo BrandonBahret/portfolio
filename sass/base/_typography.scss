@@ -2,11 +2,6 @@
 
 :root {
     /*    font sizes    */
-    // --fs-300: clamp(1.00rem, 1vw + 0.50rem, 1.15rem);
-    // --fs-400: clamp(1.20rem, 1vw + 0.75rem, 1.45rem);
-    // --fs-500: clamp(1.20rem, 0.75vw + 1rem, 1.5rem);
-    // --fs-600: clamp(1.35rem, 1vw + 1rem, 2rem);
-
     --fs-100: #{fs-fluid(0.850rem, 1.000rem, 1)};
     --fs-200: #{fs-fluid(1.000rem, 1.088rem, 1)};
     --fs-300: #{fs-fluid(1.000rem, 1.310rem, 0.4)};
@@ -20,7 +15,24 @@
     /*    font families   */
     --ff-serif: 'Yeseva One', serif;
     --ff-sans: 'Nunito', sans-serif;
-    --ff-display: var(--ff-serif);    
+    --ff-display: var(--ff-serif); 
+}
+
+:root[data-js-enabled=false] {
+    // --fs-300: clamp(1.00rem, 1vw + 0.50rem, 1.15rem);
+    // --fs-400: clamp(1.20rem, 1vw + 0.75rem, 1.45rem);
+    // --fs-500: clamp(1.20rem, 0.75vw + 1rem, 1.5rem);
+    // --fs-600: clamp(1.35rem, 1vw + 1rem, 2rem);
+    
+    --fs-100: clamp(0.850rem, 1vw + 1rem, 1.000rem);
+    --fs-200: clamp(1.000rem, 1vw + 1rem, 1.088rem);
+    --fs-300: clamp(1.000rem, 1vw + 1rem, 1.310rem);
+    --fs-400: clamp(1.310rem, 1vw + 1rem, 1.578rem);
+    --fs-500: clamp(1.578rem, 3vw + 1rem, 1.901rem);
+    --fs-600: clamp(1.578rem, 3vw + 1rem, 2.289rem);
+    --fs-700: clamp(1.901rem, 3vw + 1rem, 2.757rem);
+    --fs-800: clamp(1.901rem, 3vw + 1rem, 3.321rem);
+    --fs-900: clamp(1.901rem, 3vw + 1rem, 4.000rem);
 }
 
 .fnt-sans {

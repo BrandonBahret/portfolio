@@ -1,3 +1,5 @@
+document.documentElement.setAttribute("data-js-enabled", true);
+
 let accordions = document.querySelectorAll('.accordion');
 
 function collapseAccordion(accordion) {

@@ -1,3 +1,15 @@
+:root {
+    --logo-mark-width: #{fs-fluid(2.289rem, 2.757rem)};
+    --logo-anchor-width: #{fs-fluid(1.27rem, 1.55rem)};
+    --fs-wordmark: #{fs-fluid(1.2rem, 1.4rem)};
+}
+
+:root[data-js-enabled=false] {
+    --logo-mark-width: clamp(2.289rem, 5vw + 1rem, 2.757rem);
+    --logo-anchor-width: clamp(1.27rem, 1vw + 1rem, 1.55rem);
+    --fs-wordmark: clamp(1.2rem, 1vw + 1rem, 1.4rem);
+}
+
 .heading-primary {
     padding: var(--margin-md)  var(--margin);
 
@@ -43,7 +55,7 @@
 
 .logo-mark {
     grid-area: l;
-    width: #{fs-fluid(2.289rem, 2.757rem)};
+    width: var(--logo-mark-width);
 }
 .logo-wordmark {
     grid-area: w;
@@ -53,7 +65,7 @@
     align-self: center;
     
     font-variation-settings: 'wght' 600;
-    font-size: #{fs-fluid(1.2rem, 1.4rem)};
+    font-size: var(--fs-wordmark);
     line-height: 125%;
     letter-spacing: 0.25px;
 }
@@ -61,7 +73,7 @@
     grid-area: a;
     justify-self: end;
     
-    width: #{fs-fluid(1.27rem, 1.55rem)} 
+    width: var(--logo-anchor-width);
 }
 
 .primary-navigation {

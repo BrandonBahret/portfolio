@@ -1,3 +1,5 @@
+document.documentElement.setAttribute("data-js-enabled", true);
+
 let submitButton = document.querySelector("#contact-form button[type='submit']");
 let emailInput = document.querySelector("#email");
 let messageInput = document.querySelector("#message");

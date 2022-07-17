@@ -1,17 +1,21 @@
+:root {
+    --side-heading-width: #{fs-fluid(10rem, 13.5rem, 0.6)};
+}
+
+:root[data-js-enabled=false] {
+    --side-heading-width: clamp(10rem, 20vw + 1rem, 13.5rem);
+}
+
+
 .container {
     max-width: max(65rem, 85vw);
     flex: 1 0;
-    // margin-inline: auto;
     padding-inline: var(--margin-md);
 
     @media (min-width: $bp-tablet) {
         padding-inline: var(--margin);
     }
 }
-// .container {
-//     max-width: 100%;
-//     margin-inline: var(--margin);
-// }
 
 .main-content {
     display: flex;
@@ -30,7 +34,6 @@
     }
 
     @media (min-width: $bp-monitor) {
-        --side-heading-width: #{fs-fluid(10rem, 13rem, 0.6)};
         grid-template-columns: var(--side-heading-width) 1fr;
 
         [class*="side-"] {
@@ -45,8 +48,6 @@
     }
 
     @media (min-width: $bp-desktop) {
-        --side-heading-width: #{fs-fluid(10rem, 13.5rem, 0.6)};
-        // grid-template-columns: var(--side-heading-width) 1fr var(--side-heading-width);
         grid-template-columns: var(--side-heading-width) 1fr;
         
         section {

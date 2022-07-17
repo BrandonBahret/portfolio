@@ -1,3 +1,5 @@
+document.documentElement.setAttribute("data-js-enabled", true);
+
 let root = document.documentElement;
 let primaryNav = document.querySelector(".primary-navigation");
 let menuToggle = document.querySelector(".menu-toggle");
