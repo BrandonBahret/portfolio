@@ -2,3 +2,17 @@ $bp-phone: 20rem;
 $bp-tablet: 41rem;
 $bp-monitor: 63rem;
 $bp-desktop: 108rem;
+
+@function less_than($bp) {
+    @return "(max-width: " + calc($bp - 0.001rem) + ")";
+}
+@function less_or_equal($bp) {
+    @return "(max-width: " + $bp + ")";
+}
+
+@function greater_than($bp) {
+    @return "(min-width: " + calc($bp + 0.001rem) + ")";
+}
+@function greater_or_equal($bp) {
+    @return "(min-width: " + $bp + ")";
+}

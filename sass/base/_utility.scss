@@ -37,17 +37,17 @@
 }
 
 @mixin phone-only {
-    @media (min-width: $bp-tablet) {
+    @media #{greater_or_equal($bp-tablet)} {
         display: none !important;
     }
 }
 @mixin tablet-and-up {
-    @media (max-width: 655px) {
+    @media #{less_than($bp-tablet)} {
         display: none !important;
     }
 }
 @mixin monitor-and-up {    
-    @media (max-width: 1007px) {
+    @media #{less_than($bp-monitor)} {
         display: none !important;
     }
 }

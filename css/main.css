@@ -281,13 +281,13 @@ address {
   }
 }
 
-@media (max-width: 655px) {
+@media (max-width: 40.999rem) {
   .tablet-and-up {
     display: none !important;
   }
 }
 
-@media (max-width: 1007px) {
+@media (max-width: 62.999rem) {
   .monitor-and-up {
     display: none !important;
   }
@@ -828,7 +828,7 @@ address {
   font-family: var(--ff-display);
   font-size: var(--fs-400);
 }
-@media (max-width: 1007px) {
+@media (max-width: 62.999rem) {
   .side-heading {
     display: none !important;
   }
