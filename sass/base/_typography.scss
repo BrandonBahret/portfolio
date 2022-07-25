@@ -18,12 +18,7 @@
     --ff-display: var(--ff-serif); 
 }
 
-:root[data-js-enabled=false] {
-    // --fs-300: clamp(1.00rem, 1vw + 0.50rem, 1.15rem);
-    // --fs-400: clamp(1.20rem, 1vw + 0.75rem, 1.45rem);
-    // --fs-500: clamp(1.20rem, 0.75vw + 1rem, 1.5rem);
-    // --fs-600: clamp(1.35rem, 1vw + 1rem, 2rem);
-    
+:root[data-js-enabled=false] {   
     --fs-100: clamp(0.850rem, 1vw + 1rem, 1.000rem);
     --fs-200: clamp(1.000rem, 1vw + 1rem, 1.088rem);
     --fs-300: clamp(1.000rem, 1vw + 1rem, 1.310rem);
